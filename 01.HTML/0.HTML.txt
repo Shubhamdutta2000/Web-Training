@@ -1,0 +1,30 @@
+1. Introduction
+2. What is HTML
+3. EDITOR for coding & Syntax and structure (code 1st in notepad next in vs code)and 
+4. head, body tag, title and meta tag (Rest code from here)
+5. Your 1st web page
+6. Heading and paragraph (h1 - h6  p)
+9. The img tags and audio tags
+10. HTML Attributes
+    - src in img
+    - href in anchor tag
+    - data- custom Attributes
+    - and many more ...
+11. HTML comments
+12. HTML links (anchor tags)
+13. HTML list (li tag)
+    - Ordered
+    - Unordered
+14. Block Level elements and Inline ELements (like div and span tag)
+15. HTML Tables
+14. ID's and Classes
+15. HTML Form
+16. Other HTML tags 
+    - b, br, hr, i
+16. Adding CSS
+    - Inline
+    - Internal
+    - External
+17. Adding JS
+    - Internal
+    - External
