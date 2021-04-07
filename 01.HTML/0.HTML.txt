@@ -4,6 +4,8 @@
 4. head, body tag, title and meta tag (Rest code from here)
 5. Your 1st web page
 6. Heading and paragraph (h1 - h6  p)
+7. Other HTML tags 
+    - b, br, hr, i
 9. The img tags and audio tags
 10. HTML Attributes
     - src in img
@@ -19,8 +21,6 @@
 15. HTML Tables
 14. ID's and Classes
 15. HTML Form
-16. Other HTML tags 
-    - b, br, hr, i
 16. Adding CSS
     - Inline
     - Internal
