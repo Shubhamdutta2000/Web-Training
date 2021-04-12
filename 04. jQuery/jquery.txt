@@ -1,0 +1,69 @@
+1. Intro
+    - simplifies a lot of the complicated things from JavaScript, like AJAX calls and DOM manipulation.
+    - Contains:-
+        HTML/DOM manipulation
+        CSS manipulation
+        HTML event methods
+        Effects and animations
+        AJAX
+        Utilities
+
+
+2. Why jQuery
+    - Companies
+        * Google
+        * IBM
+        * Microsoft
+        * Netflix
+
+
+3. Syntax
+    - $(selector).action()
+    - $(document).ready(function(){     // run any jQuery code after document is finished loading (is ready).
+
+            // jQuery methods will be here...
+
+        });
+    EX:-
+     {
+            $('p').click(function)
+     }
+
+    console.log(jQuery) == console.log($)
+
+
+4. jQuery Events (generally actions)
+    - $(selector).click()
+    - $(selector).dbclick()
+    - $(selector).mouseenter()
+    - $(selector).mouseleave()
+    - $(selector).mouseup()
+    - $(selector).mousedown()
+
+
+5. GET and SET content
+    - .text()
+    - .html()
+    - .val()
+    - .attr()
+
+
+6. Add Html content
+    - .append()
+    - .prepend()
+    - .after(), before()
+
+
+7. Manipulating  CSS
+    - .css()
+    - .addClass()
+    - .removeClass()
+    - toggleClass()
+
+8. Animation
+    - .hide(speed, callback)   -.show(speed, callback)   - .toggle(speed, callback)
+    - slideDown(speed, callback)   - slideUp(speed, callback)   - slideToggle(speed, callback)
+    -  .animate({params}, speed, callback);
+
+    projects:
+        - ufoGame
