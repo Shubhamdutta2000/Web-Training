@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed");
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  margin: 0;
+  background: #333;
+  height: auto;
+}
+
+main {
+  max-width: 900px;
+  margin: auto;
+  box-shadow: 50px 0px 50px 0px rgba(0, 0, 0, 0.1),
+    -30px 0px 40px rgba(0, 0, 0, 0.15);
+}
+
+#landing {
+  background: #333;
+}
+
+/* left side landing text */
+#landing-text {
+  display: flex;
+  flex: 0 1 40vw;
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+#landing-text h2 {
+  color: #888;
+  font-weight: 400;
+  font-size: 1.4rem;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin: 0;
+  color: #ccc;
+}
+
+/* view work button */
+
+.btn {
+  padding: 0.5rem 2rem;
+  border: 1px #ccc solid;
+  display: inline-block;
+  margin: 2rem 0 0;
+  border-radius: 50px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  transition: background 500ms ease;
+}
+
+.btn:hover {
+  background: #f4f4f4;
+  color: #333;
+}
+
+/* end left side landing text */
+
+/* right side landing image */
+#landing-image {
+  background: url(https://images.unsplash.com/photo-1596265371388-43edbaadab94?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50vh;
+  flex: 0 1 60vw;
+  margin: 0;
+}
+
+/* end right side landing image */
+
+/* all images section */
+
+#header {
+  padding: 1.5rem;
+  text-align: center;
+  background: rgb(70, 36, 36);
+  color: #ccc;
+  font-size: x-large;
+}
+
+#header h2 {
+  border-left: dotted 1px #fff;
+  border-right: dotted 1px #fff;
+  display: inline-block;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+/* each image */
+img {
+  display: block;
+  width: 100%;
+}
+
+/* each image caption */
+.caption {
+  background-color: rgb(70, 36, 36);
+  color: #ccc;
+  padding: 0.8rem;
+  text-align: center;
+}
+
+/* end all images section */
+
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  margin: auto;
+  color: #ccc;
+}
+
+footer h3 {
+  font-size: 3rem;
+  margin-bottom: 0;
+}
+
+/* Screen Sizes 500px and Up */
+@media (min-width: 500px) {
+  #landing {
+    display: flex;
+    height: 100%;
+  }
+
+  #landing-text {
+    height: 100vh;
+  }
+
+  #landing-image {
+    height: 100vh;
+  }
+}
+
+/* Screen Sizes 700px and Up */
+@media (min-width: 700px) {
+  .btn {
+    padding: 1rem 3rem;
+  }
+}
