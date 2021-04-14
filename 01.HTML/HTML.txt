@@ -30,3 +30,25 @@
 17. Adding JS
     - Internal
     - External
+
+
+
+<!--
+     PATH
+        Relative Path
+        Absolute Path 
+        .        - current directory 
+        ..       - parent directory
+        ../../   - grand parent directory 
+-->
+
+
+SHORTCUTS of Vs code
+
+<!-- COMMENT: Ctrl + k + c -->
+<!-- Ctrl + D: Select the word where cursor is there -->
+<!-- Ctrl + C (on line): Copy a line  -->
+<!-- Ctrl + V  (on line): Paste in new line  -->
+
+<!-- emmet -->
+<!-- Cheatsheet: https://docs.emmet.io/cheat-sheet/ -->
