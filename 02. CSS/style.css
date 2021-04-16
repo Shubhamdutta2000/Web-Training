@@ -1,0 +1,75 @@
+/* heading */
+
+* {
+  margin: 10px;
+}
+
+/* Descendant Selector */
+.content .html {
+  color: rgb(0, 35, 231);
+}
+
+/* Child Selector */
+/* .content > .html {
+  color: darkgoldenrod;
+} */
+
+/* Adjacent Sibling Selector */
+/* .content + .html {
+  color: darkgoldenrod;
+} */
+
+/* General Sibling Selector */
+/* .content ~ .html {
+  color: darkgoldenrod;
+} */
+
+/* Selector with attribute */
+a[target="_blank"] {
+  background-color: thistle;
+}
+
+input[name="fname"] {
+  width: 200px;
+  height: 50px;
+}
+
+/* Selector Specificity  */
+/* 1. Inline Styling                        - 1000
+   2. id selector                           - 100
+   3. class selector/ attribute selector    - 10
+   4. Element                               - 1
+   */
+
+.hello {
+  background-color: thistle;
+}
+
+#hello {
+  background-color: tomato;
+}
+
+h1[class="hello"] {
+  background-color: violet;
+}
+
+/* 10 + 1 */
+.content2 h2 {
+  color: turquoise;
+}
+
+/* 1 + 10 */
+div .heading2 {
+  color: yellowgreen;
+}
+
+.box .content {
+  margin: 100px 50px 100px 50px;
+  background-color: teal;
+  color: white;
+  padding: 20px 10px 20px 10px;
+  width: 100px;
+  height: 100px;
+  border: 2px dashed black;
+  float: right;
+}

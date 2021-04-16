@@ -39,7 +39,7 @@
 
 6. Conflicts in css
 	- Cascades rules: 		
-	    1. Find all declarations whose selectors match a particular element.
+	        1. Find all declarations whose selectors match a particular element.
     	    2. Sort the selectors by specificity
     	    3. Sort by order specified (last css applied if same level of specificity)
 
