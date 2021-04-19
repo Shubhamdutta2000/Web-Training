@@ -64,12 +64,59 @@ div .heading2 {
 }
 
 .box .content {
-  margin: 100px 50px 100px 50px;
+  margin: 6.25rem 3.125rem 6.25rem 3.125rem;
   background-color: teal;
   color: white;
   padding: 20px 10px 20px 10px;
   width: 100px;
   height: 100px;
-  border: 2px dashed black;
+  border: 2px solid black;
+  border-radius: 10px;
   float: right;
+  font-size: 2rem; /* 32px */
+  font-weight: bolder;
+  color: aqua;
+  position: fixed;
+  top: 0;
+  right: 0;
 }
+
+/* 
+1 rem -> 16px
+*/
+
+.box2 {
+  background-image: url("../01.HTML/testImage.png");
+  background-size: cover;
+  background-position: center;
+  padding: 100px;
+  margin-top: 50px;
+  width: 200px;
+  height: 100px;
+  position: relative;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.739);
+}
+
+.box2 > .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+
+  background-color: blueviolet;
+  width: 50px;
+  height: 50px;
+}
+
+.box2 > .content2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  background-color: rgb(168, 231, 21);
+  width: 50px;
+  height: 50px;
+}
+
+

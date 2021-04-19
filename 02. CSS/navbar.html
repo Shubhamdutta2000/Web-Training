@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Navbar</title>
+    <style>
+      .flex-container {
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        margin-top: 80px;
+        position: sticky;
+        background-color: #5f5f5f;
+        top: 0;
+      }
+
+      .flex-container > a {
+        background-color: #5f5f5f;
+        padding: 20px;
+        font-size: 30px;
+        color: #fff;
+
+        /* for removing the underline in the text of anchor tag */
+        text-decoration: none;
+      }
+
+      .flex-container > a:hover {
+        background-color: rgba(0, 0, 0, 0.16);
+        color: whitesmoke;
+        text-align: center;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+      <a style="order: 2" href="/">
+        <div>Home</div>
+      </a>
+      <a style="order: 1" href="/">
+        <div>HTML</div>
+      </a>
+      <a style="order: 3" href="/">
+        <div>CSS</div>
+      </a>
+      <a style="order: 4" href="/">
+        <div>Bootstrap</div>
+      </a>
+      <a style="order: 5" href="/">
+        <div>JS</div>
+      </a>
+      <a style="order: 6" href="/">
+        <div>MORE</div>
+      </a>
+    </div>
+
+    <p>
+      A Flexible Layout must have a parent element with the
+      <em>display</em> property set to <em>flex</em>.
+    </p>
+
+    <p class="con">
+      Direct child elements(s) of the flexible container automatically becomes
+      flexible items.
+    </p>
+  </body>
+</html>

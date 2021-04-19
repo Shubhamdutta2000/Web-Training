@@ -56,7 +56,9 @@
 	- absolute (acc. to nearest relative existing element it moves)
 	- relative (acc. to screen it moves )
 	- fixed (at particular position)
+	- sticky (is positioned based on the user's scroll position.)
 	- top, bottom, left, right
+
 12. z-index (for overlapping)
 
 13. rounded corners
@@ -83,3 +85,18 @@ Project
 
 Bootstrap
 -by projects
+
+
+
+How To Center an element:
+
+1.
+	position: absolute
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%)
+
+2. 
+	display: flex;
+	justify-content: center;
+  	align-items: center;
