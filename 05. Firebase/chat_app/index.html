@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Firebase chatApp</title>
+  </head>
+  <body>
+    <input type="text" id="message" />
+    <button onclick="writeUserData()">Send</button>
+
+    <div id="msgdiv"></div>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+     <script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-database.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      var firebaseConfig = {
+        apiKey: "AIzaSyBoMq8nWlhuCaRFZJy5A1VRcWyKixO7RTo",
+        authDomain: "chat-app-8d489.firebaseapp.com",
+        projectId: "chat-app-8d489",
+        storageBucket: "chat-app-8d489.appspot.com",
+        messagingSenderId: "143629128954",
+        appId: "1:143629128954:web:87acb11b9b67861a2c2543",
+        measurementId: "G-LRYZ8B9R8K",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
