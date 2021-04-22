@@ -1,23 +1,39 @@
 /* heading */
 
 * {
-  margin: 10px;
+  margin: 4px;
+}
+
+/* #leh {
+  color: blue;
+  background-color: burlywood;
+  float: right;
+}  */
+
+[id^="l"] {
+  color: blue;
+  background-color: burlywood;
+  float: right;
 }
 
 /* Descendant Selector */
-.content .html {
+/* .content .html {
   color: rgb(0, 35, 231);
-}
+} */
 
 /* Child Selector */
-/* .content > .html {
+/* .content > .react {
   color: darkgoldenrod;
 } */
 
 /* Adjacent Sibling Selector */
-/* .content + .html {
+.html + .html {
   color: darkgoldenrod;
-} */
+}
+
+.html + .html + .html {
+  color: red;
+}
 
 /* General Sibling Selector */
 /* .content ~ .html {
@@ -41,44 +57,30 @@ input[name="fname"] {
    4. Element                               - 1
    */
 
-.hello {
-  background-color: thistle;
-}
-
-#hello {
-  background-color: tomato;
-}
-
-h1[class="hello"] {
-  background-color: violet;
-}
-
-/* 10 + 1 */
+/* 11 */
 .content2 h2 {
   color: turquoise;
 }
 
-/* 1 + 10 */
+/* 11 */
 div .heading2 {
   color: yellowgreen;
 }
 
-.box .content {
-  margin: 6.25rem 3.125rem 6.25rem 3.125rem;
+/* 1rem = 16px */
+
+.box {
+  margin: 10px 20px 40px 100px;
   background-color: teal;
-  color: white;
-  padding: 20px 10px 20px 10px;
+  padding: 40px 30px;
   width: 100px;
   height: 100px;
   border: 2px solid black;
   border-radius: 10px;
-  float: right;
   font-size: 2rem; /* 32px */
-  font-weight: bolder;
+  font-weight: 900;
   color: aqua;
-  position: fixed;
-  top: 0;
-  right: 0;
+  float: right;
 }
 
 /* 
@@ -102,8 +104,7 @@ div .heading2 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 5;
-
+  z-index: 61;
   background-color: blueviolet;
   width: 50px;
   height: 50px;
@@ -118,5 +119,3 @@ div .heading2 {
   width: 50px;
   height: 50px;
 }
-
-

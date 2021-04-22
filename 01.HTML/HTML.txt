@@ -35,8 +35,8 @@
 
 <!--
      PATH
+        Absolute Path
         Relative Path
-        Absolute Path 
         .        - current directory 
         ..       - parent directory
         ../../   - grand parent directory 

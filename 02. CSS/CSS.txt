@@ -3,7 +3,11 @@
 1. Introduction => {
     What is CSS
     default browser styling vs custom css (EX: h1 tag has default large size can change by custom css)
-    Syntax
+    Syntax 
+		selector {
+			css-property: value;
+			css-property: value;
+		}
 }
 
 2. Ways to insert styling
@@ -19,12 +23,9 @@
    - targetting multiple elements
    - Universal Selector
    - Combinator Selector (relationship between selectors)        
-        * descendant selector (space)
-        * child selector (>)
+        * descendant selector (space) || child selector (>)
         * adjacent sibling selector (+)
         * general sibling selector (~)
-    - Pseudo-classes selector (define a special state of an element)
-        * anchor pseudo classes (:link, :visited, :hover, :active)
     - Attribute Selector  (select elements with a specified attribute)
 	* element[attribute]
 	* element[attribute = val]
