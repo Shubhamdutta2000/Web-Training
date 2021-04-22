@@ -4,22 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Pallabi" />
     <meta name="keyword" content="css, css practice" />
     <meta name="description" content="We will practice css here" />
     <link rel="stylesheet" href="./style.css">
     <title>CSS Practice</title>
- <style>
-     /* 
-     <selector> {
-
-     }
-      */
-     #heading {
-        background-color: tomato;
-     }
- </style>
+    <style>
+        #hel {
+            color: blue;
+            background-color: burlywood;
+        }
+    
+    </style>
 </head>
 <body>
     
@@ -31,10 +27,22 @@
         External Styling
     -->
 
+    <!-- inline styling -->
+    <div style="color: blue;">Hello World</div> <!-- not preferable -->
+
+    <!-- internal styling -->
+    <div id="hel">Hello World</div> <!-- medium preferable -->
+
+
+    <!-- external styling -->
+    <div id="leh">Hello World</div> <!-- preferable -->
+
+
+
     <div class="content">
         <h2 class="html">Html</h2>
-        <h2 class="html">CSS</h2>
-        <h2 class="html">JS</h2>
+        <h3 class="html">CSS</h2>
+        <h4 class="html">JS</h2>
         <h2 class="react">React</h2>
     </div>
 <!-- 
@@ -49,18 +57,26 @@
 <a href="https://www.facebook.com/" target="_blank">Facebbok</a>
 <a href="https://www.facebook.com/">Facebbok</a>
 
-<br>
-<br>
-<br>
+<br />
+<br />
+<br />
+<br />
 
+
+<!-- Specificity Rule -->
 <div class="content2">
-    <h2 class="heading2">Heading 2</h2>
-    <h3 class="heading3">Heading 2</h3>
+    <h2 id="heading2" class="heading2">Heading 2</h2>
+    <h3 id="heading3" class="heading3">Heading 2</h3>
+    <h3 id="heading3" class="heading4">Heading 2</h3>
 </div>
+
+
 
 <div class="box">
     <div class="content">Content</div>
 </div>
+
+
 <h1 class="end">After Content</h1>
 
 
