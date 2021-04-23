@@ -1,0 +1,76 @@
+body {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.facebook-login {
+  margin-top: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading {
+  color: #1877f2;
+  font-size: 110px;
+  font-weight: 800;
+}
+
+.left-side {
+  width: 35%;
+}
+
+.paragraph {
+  font-size: 32px;
+  font-weight: 550;
+  margin-right: 100px;
+}
+
+form {
+  background-color: rgb(255, 255, 255);
+  padding: 34px;
+  border-radius: 2%;
+  box-shadow: 6px 6px 30px rgba(0, 0, 0, 0.5);
+}
+
+input {
+  padding: 22px 68px 22px 10px;
+  margin-bottom: 20px;
+  color: #1d212969;
+  font-size: 17px;
+  border: 1px solid #1d212941;
+  border-radius: 4%;
+  width: 332px;
+}
+
+.login-button {
+  background-color: #1877f2;
+  border: none;
+  border-radius: 6px;
+  font-size: 20px;
+  padding: 12px 20px;
+  width: 100%;
+  color: #fff;
+  cursor: pointer;
+}
+
+form a {
+  text-align: center;
+  color: #1877f2;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  margin-bottom: 30px;
+}
+
+.newAccount {
+  color: #fff;
+  background-color: #42b72a;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 20px;
+}
