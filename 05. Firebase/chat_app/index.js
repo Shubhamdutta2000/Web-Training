@@ -19,14 +19,15 @@ function writeUserData() {
 database.ref("messages").on("value", (snapshot) => {
   var messages = snapshot.val();
   //delete previous messages from div
-  document.getElementById("msgdiv").innerHTML = "";
+  document.getElementById("main-container").innerHTML = "";
 
   for (var key in messages) {
     var message = messages[key];
     var x = document.createElement("P");
     var t = document.createTextNode(`${message.name}: : ${message.message}`);
+    x.classList.add("bubble");
     x.appendChild(t);
-    document.getElementById("msgdiv").appendChild(x);
+    document.getElementById("main-container").appendChild(x);
     console.log(t);
   }
 });
