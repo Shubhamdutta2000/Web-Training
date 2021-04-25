@@ -12,19 +12,21 @@ function writeUserData() {
     message: message,
     name: Name,
   });
+  document.getElementById("message").value = "";
 }
 
 //Read data from database
 database.ref("messages").on("value", (snapshot) => {
   var messages = snapshot.val();
+  //delete previous messages from div
+  document.getElementById("msgdiv").innerHTML = "";
 
   for (var key in messages) {
     var message = messages[key];
+    var x = document.createElement("P");
+    var t = document.createTextNode(`${message.name}: : ${message.message}`);
+    x.appendChild(t);
+    document.getElementById("msgdiv").appendChild(x);
+    console.log(t);
   }
-  var x = document.createElement("P");
-  var t = document.createTextNode(`${message.name}: : ${message.message}`);
-  x.appendChild(t);
-  document.getElementById("msgdiv").appendChild(x);
-  console.log(t);
-
 });
