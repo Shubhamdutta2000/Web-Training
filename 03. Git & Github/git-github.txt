@@ -1,0 +1,102 @@
+# Configure tooling
+    - Configure user information for all local repositories
+
+    1. $ git config --global user.email "[email address]"
+        - Sets the email you want attached to your commit transactions
+
+    2. $ git config --global user.name "[name]"
+        - Sets the name you want attached to your commit transactions
+
+
+
+
+# Create Repositories
+    - When starting out with a new repository, you only need to do it 
+      once; either locally, then push to GitHub, or by cloning an 
+      existing repository.
+
+     1. $ git init
+          - Turn an existing directory into a git repository
+
+     2. $ git clone [url]
+          - Clone (download) a repository that already exists on 
+            GitHub, including all of the files, branches, and commits
+
+
+
+
+# The .gitgnore file
+    - Sometimes it may be a good idea to exclude files from being 
+      tracked with Git.
+
+
+
+
+
+# Branches
+   -  Any commits you make will be made on the branch you're currently 
+      “checked out” to. Use git status to see which branch that is.
+
+
+    1. $ git branch [branch-name]
+        - Creates a new branch
+   
+    2. git branch -d [branch-name]
+        - Deletes the specified branch
+
+    3. $ git merge [branch]
+        - Combines the specified branch’s history into the 
+          current branch. This is usually done in pull requests, 
+          but is an important Git operation.
+
+   4. $ git checkout [branch-name]
+        - Switches to the specified branch and updates the 
+          working directory
+
+
+
+
+# Synchronize changes
+    - Synchronize your local repository with the remote repository 
+      on GitHub.com
+    
+    1. $ git fetch
+        - Downloads all history from the remote tracking branches
+
+    2. $ git merge
+        - Combines remote tracking branch into current local branch
+
+    3. $ git push
+        - Uploads all local branch commits to GitHub
+
+    4. $ git pull
+        - Updates your current local working branch with all new 
+          commits from the corresponding remote branch on GitHub. 
+          git pull is a combination of git fetch and git merge
+
+
+
+
+
+# Make changes
+    - Browse and inspect the evolution of project files
+
+    1. $ git diff [first-branch]...[second-branch]
+        - Shows content differences between two branches
+
+    2. $ git log --follow [file]
+        - Lists version history for a file, including renames
+
+    3. $ git log
+        - Lists version history for the current branch
+
+    4. $ git commit -m "[descriptive message]"
+        - Records file snapshots permanently in version history
+
+    5. $ git add [file]
+        - Snapshots the file in preparation for versioning
+
+    6. $ git show [commit]
+        - Outputs metadata and content changes of the specified commit
+
+
