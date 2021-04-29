@@ -101,15 +101,20 @@ if (isMarried === 'yes') {
 } else {
     console.log(name + ' will hopefully marry soon :)');
 }
+
 isMarried = true;
+
 if(isMarried) {
     console.log('YES!');
 } else {
     console.log('NO!');
 }
+
 if(isMarried) {
     console.log('YES!');
 }
+
+
 if (23 === "23") {
     console.log('Something to print...');
 }
@@ -129,6 +134,7 @@ if (age < 20) {
 } else {
     console.log('John is a man.');
 }
+
 var job = 'teacher';
 job = prompt('What does john do?');
 switch (job) {
@@ -151,12 +157,16 @@ switch (job) {
 // CODING CHALLENGE 1
 
 /*
+
 John and a friend invented a simple game where the player with the highest value of his height (in centimeters) plus five times his age wins (what a silly game :)
 1. Create variables for the heights and ages of two friends and assign them some values
 2. Calculate their scores
 3. Decide who wins and print the winner to the console. Include the score in the string that you output to the console. Don't forget that there can be a draw (both players with the same score).
 4. EXTRA: Add a third player and now decide who wins. Hint: you will need the && operator to take the decision. If you can't solve this one, just watch the solution, it's no problem :)
+
 // SOLUTION:
+
+//Part 1
 var heightJohn = 170;
 var heightMike = 195;
 var ageJohn = 36;
@@ -170,6 +180,8 @@ if (scoreJohn > scoreMike) {
 } else if (scoreJohn === scoreMike) {
     console.log('There is a draw.');
 }
+
+//Part 2
 var heightMary = 158;
 var ageMary = 31;
 var scoreMary = heightMary + 5 * ageMary;
@@ -182,19 +194,25 @@ if (scoreJohn > scoreMike && scoreJohn > scoreMary) {
 } else {
     console.log('It\'s a draw.');
 }
+
 */
 
 //////////////////////////////////////////////////////////////////////////////
 // Lecture: Functions
 
 /*
+
+// EX1:
 function calculateAge(yearOfBirth) {
-    var age = 2016 - yearOfBirth;
+    var age = 2021 - yearOfBirth;
     return age;
 }
 var ageJohn = calculateAge(1990);
 var ageMike = calculateAge(1969);
-var ageMary = calculateAge(1948);
+var ageMary = calculateAge(2000);
+
+// EX2:
+
 function yearsUntilRetirement(name, year) {
     var age = calculateAge(year);
     var retirement = 65 - age;
@@ -225,6 +243,7 @@ var someFun = function(par) {
 //Expressions
 3 + 4;
 var x = 3;
+
 //statements
 if (x === 5) {
     //do soemthing
@@ -237,20 +256,34 @@ if (x === 5) {
 
 /*
 
+// CRUD in array
+
+// C
 var names = ['John', 'Jane', 'Mark'];
 var years = new Array(1990, 1969, 1948);
+
+// R
 console.log(names[2]);
 names[1] = 'Ben';
 console.log(names);
+
 var john = ['John', 'Smith', 1990, 'designer', false];
-john.push('blue');
-john.unshift('Mr.');
-john.pop();
-john.shift();
+
+// U
+john.push('blue'); // add to end
+john.unshift('Mr.'); // add to beginning
+
+// D
+john.pop(); // frpm end
+john.shift(); // from start
 console.log(john);
 if (john.indexOf('teacher') === -1) {
     console.log('John is NOT a teacher.');
 }
+
+// splice operator
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.splice(2, 1, "Lemon", "Kiwi");
 
 */
 
@@ -259,6 +292,9 @@ if (john.indexOf('teacher') === -1) {
 
 /*
 
+// CRUD in obj
+
+// C
 var john = {
     name: 'John',
     lastName: 'Smith',
@@ -266,20 +302,16 @@ var john = {
     job: 'teacher',
     isMarried: false
 };
+
+// R
 console.log(john.lastName);
 console.log(john['lastName']);
-var xyz = 'job';
-console.log(john[xyz]);
+
+// U
 john.lastName = 'Miller';
 john['job'] = 'programmer';
 console.log(john);
-var jane = new Object();
-jane.name = 'Jane';
-jane.lastName = 'Smith';
-jane['yearOfBirth'] = 1969;
-jane['job'] = 'retired';
-jane['isMarried'] = true;
-console.log(jane);
+
 
 */
 
@@ -299,11 +331,13 @@ var john = {
         return 2016 - this.yearOfBirth;
     }
 };
+
 //console.log(john.calculateAge(1970));
 console.log(john.calculateAge());
 var age = john.calculateAge();
 john.age = age;
 console.log(john);
+
 //v2.0
 var john = {
     name: 'John',
@@ -349,6 +383,8 @@ for (var i = 0; i < 10; i++) {
 
 /*
 var names = ['John', 'Jane', 'Mary', 'Mark', 'Bob'];
+
+
 // for loops
 for (var i = 0; i < names.length; i++) {
     console.log(names[i]);
@@ -356,12 +392,16 @@ for (var i = 0; i < names.length; i++) {
 for (var i = names.length - 1; i >= 0; i--) {
     console.log(names[i]);
 }
+
+
 // while loops
 var i = 0;
 while(i < names.length) {
     console.log(names[i]);
     i++;
 }
+
+
 // break and continue
 for (var i = 1; i <= 5; i++) {
     console.log(i);

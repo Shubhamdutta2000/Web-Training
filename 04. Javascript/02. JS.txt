@@ -37,9 +37,16 @@
 
 12. Arrays (Contiguous collection of data)
 	- array length
-	- CRUD operation of array (push, pop)
-	- slice operation (create, delete and update elements in array)
-		* syntax:- slice(start, deleteCount, value)
+	- CRUD operation of array 
+		* push(val) 	   : add to end
+		* unshift(value)   : add to beginning
+		* pop()  		   : remove from end
+		* shift()  		   : remove from beginning
+
+	- splice operation (create, delete and update elements in array)
+		* syntax:- splice(start, deleteCount, value)
+	- indexOf()
+
 
 14. JS Objects
 	- object declaration and fetching values of key
