@@ -1,0 +1,10 @@
+	- Basic Principles
+	- PHP / Apache / MySQL Setup
+	- Code Systax (vars, arrays, loops, conditionals, functions)
+	- Procedural & OOP
+	- Dynamic pages
+	- Form Submissions / Supergoals
+	- Working with Directories
+	- Mini Project
+		* Contact Form
+		* User Login System
