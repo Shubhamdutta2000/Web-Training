@@ -20,7 +20,7 @@
 	- a variable can be used before it has been declared.
 
 7. Operators 
-	- Arithmatic operators 
+	- Arithmatic operators (+, -, %, /, *)
 	- Assignment Operators (=, +=, %=, **=)
 	- adding numbers and strings
 	- Comparison Operator (==, ===, !=, !==, <, > etc)
