@@ -1,0 +1,6 @@
+Install XAMPP (EASIER TO GET STARTED)
+move to htdocs
+open localhost
+
+Chamge root user password privilages from xamp myphpadmin and 
+then change the password in C:\xampp\phpMyAdmin\config.inc.php file.
