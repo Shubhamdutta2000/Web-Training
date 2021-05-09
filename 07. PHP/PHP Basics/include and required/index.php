@@ -1,27 +1,9 @@
 <?php 
-
-	//include('demos.php');
-	
-	//require('demos.php');
-
-	//include 'demo.php';
-
-	//require 'demo.php';   //fatal error
-
-	//echo 'end of php';
-
+	//include 'header.php';	// give warning and show rest of the content
+	//require 'header.php';   //fatal error
 ?>
+	<?php include('include/header.php'); ?>
 
-<!DOCTYPE html>
-<html>
-<head>
-	<title>PHP Tutorials</title>
-</head>
-<body>
+		<h1>Home Page</h1>
 
-	<?php // include('content.php'); ?>
-	<?php // include('content.php'); ?>
-
-
-</body>
-</html>
+	<?php include('include/footer.php'); ?>
