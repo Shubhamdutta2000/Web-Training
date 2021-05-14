@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:600,700"
+      rel="stylesheet"
+    />
+    <title>A simple calculator</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="calculator">
+        <div id="result">
+          <input type="text" id="input" />
+        </div>
+        <div id="Keyboard">
+          <button class="operator" id="clr" onclick="clearAnswer();">C</button>
+          <button class="operator" id="backspace" onclick="backspaceEmple();">
+            CE
+          </button>
+          <button class="operator" id="%" onclick="dis('%')">%</button>
+          <button class="operator" id="divide" onclick="dis('/')">
+            &#247;
+          </button>
+          <button class="number" id="block7" onclick="dis('7')">7</button>
+          <button class="number" id="block8" onclick="dis('8')">8</button>
+          <button class="number" id="block9" onclick="dis('9')">9</button>
+          <button class="operator" id="multiply" onclick="dis('*')">
+            &times;
+          </button>
+          <button class="number" id="block4" onclick="dis('4')">4</button>
+          <button class="number" id="block5" onclick="dis('5')">5</button>
+          <button class="number" id="block6" onclick="dis('6')">6</button>
+          <button class="operator" id="minus" onclick="dis('-')">-</button>
+          <button class="number" id="block1" onclick="dis('1')">1</button>
+          <button class="number" id="block2" onclick="dis('2')">2</button>
+          <button class="number" id="block3" onclick="dis('3')">3</button>
+          <button class="operator" id="plus" onclick="dis('+')">+</button>
+          <button class="empty" id="empty"></button>
+          <button class="number" id="block0" onclick="dis('0')">0</button>
+          <button class="number" id="dot" onclick="dis('.')">.</button>
+          <button class="operator" id="ans" onclick="displayAnswer();">
+            =
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>

@@ -418,6 +418,30 @@ for (var i = 1; i <= 5; i++) {
     console.log(i);
 }
 */
+function printFullAge(years) {
+  var ages = [23, 21, 13];
+  var fullAge = [true, true, false];
+
+  for (var i = 0; i < years.length; i++) {
+    ages[i] = 2021 - years[i];
+  }
+
+  for (var i = 0; i < ages.length; i++) {
+    if (ages[i] >= 18) {
+      fullAge[i] = true;
+    } else {
+      fullAge[2] = false;
+    }
+  }
+
+  return fullAge;
+}
+
+var full_1 = printFullAge([2000, 1998, 2010]);
+var full_2 = printFullAge([2002, 1996, 2006]);
+
+console.log(full_1);
+console.log(full_2);
 
 //////////////////////////////////////////////////////////////////////////////
 // CODING CHALLENGE 2
