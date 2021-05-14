@@ -6,8 +6,18 @@
 
     <p id="demo"></p>
 
+    <button onclick="calculateAge(1990, 'Shubham')">
+      Calculate Shubham Age
+    </button>
+    <button onclick="calculateAge(1996, 'Samrat')">Calculate Samrat Age</button>
+
     <script>
-      document.getElementById("demo").innerHTML = 5.0 + 6.0;
+      // define
+      function calculateAge(yearOfBirth, name) {
+        var age = 2021 - yearOfBirth;
+        console.log(age);
+        document.getElementById("demo").innerHTML = name + " " + age;
+      }
     </script>
   </body>
 </html>
