@@ -1,0 +1,36 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+#left {
+  padding-top: 32px;
+  margin-bottom: 25px;
+  font-family: cursive;
+  float: left;
+  margin-left: 30px;
+  font-size: 30px;
+}
+
+.navbar-nav {
+  color: #fff;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.cover {
+  background-image: url("./cover.jpg");
+  height: 90vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.heading-1 {
+  text-align: center;
+  font-size: 60px;
+  text-shadow: 1px 1px 2px black;
+  padding: 50px;
+  color: silver;
+}
