@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <meta content="text/html; charset=utf-8" />
+    <title>AJAX JSON</title>
+  </head>
+  <body>
+    Date: <span id="date"></span><br />
+    Time: <span id="time"></span><br />
+    <button type="button" onclick="load()">Load Information</button>
+
+    <script type="application/javascript">
+      function load() {
+        var url = "./index.json"; //use any url that have json data
+        var xmlhttp = new XMLHttpRequest();
+
+        xmlhttp.onreadystatechange = function () {
+          if (xmlhttp.readyState == 4) {
+            var jsonObj = JSON.parse(this.responseText); //JSON.parse() returns JSON object
+            document.getElementById("date").innerHTML = jsonObj.date;
+            document.getElementById("time").innerHTML = jsonObj.time;
+          }
+        };
+        xmlhttp.open("GET", url, true);
+        xmlhttp.send();
+      }
+    </script>
+  </body>
+</html>

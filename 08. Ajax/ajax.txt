@@ -1,0 +1,8 @@
+Ajax Mechanism:-
+
+   1. User sends a request from the HTML and a javascript call goes to XMLHttpRequest object.
+   2. HTTP Request is sent to the server by XMLHttpRequest object.
+   3. Server interacts with the database using JSP, PHP, Servlet, ASP.net etc.
+   4. Data is retrieved.
+   5. Server sends XML data or JSON data to the XMLHttpRequest callback function.
+   6. HTML and CSS data is displayed on the browser.
