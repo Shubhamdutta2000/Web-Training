@@ -15,11 +15,7 @@
 	- Redeclaring variables
 	- let & const cannot be used untill they have been declared
 
-6. JS Hoisting
-	- JavaScript's default behavior of moving declarations to the top.
-	- a variable can be used before it has been declared.
-
-7. Operators 
+6. Operators 
 	- Arithmatic operators (+, -, %, /, *)
 	- Assignment Operators (=, +=, %=, **=)
 	- adding numbers and strings
@@ -27,15 +23,15 @@
 	- logical operators (&&, ||, ! etc)
 	- == vs ===
 
-8. if-else and nested if-else
+7. if-else and nested if-else
 
-9. functions in JS
+8. functions in JS
 
-10. ES6 Arrow function
+9. ES6 Arrow function
 
-11. for loop and while loop
+10. for loop and while loop
 
-12. Arrays (Contiguous collection of data)
+11. Arrays (Contiguous collection of data)
 	- array length
 	- CRUD operation of array 
 		* push(val) 	   : add to end
@@ -48,15 +44,15 @@
 	- indexOf()
 
 
-14. JS Objects
+12. JS Objects
 	- object declaration and fetching values of key
 
-15. JSON (Javascript Object Notation)
+13. JSON (Javascript Object Notation)
 	- a format for storing data when sending data from server to client
 	- convert JSON to JS object and vice versa
 
 
-16. DOM (Document Object Model) Manupulation
+14. DOM (Document Object Model) Manupulation
 	- In web page, Browser creates DOM of HTML page
 	- Finding elements
 			* getElementById(ID)
@@ -90,10 +86,6 @@
 	- Event Listener
 			* addEventListener(event, function)
 			* removeEventListener(event, function)
-
-17. map, filter in array
-	- map -> loop through each elements in array
-	- filter -> returned filtered elements from array
 
 
 Calculator App
