@@ -1,0 +1,23 @@
+=> Steps to Send Mail From Localhost XAMPP Using Gmail:
+
+   1. Open XAMPP Installation Directory.
+   2.  Go to C:\xampp\php and open the php.ini file.
+   3.  Find [mail function] in the file
+   4.  Search and pass the following values:
+
+        -   SMTP=smtp.gmail.com
+            smtp_port=587
+            sendmail_from = YourGmailId@gmail.com
+            sendmail_path = "\"C:\xampp\sendmail\sendmail.exe\" -t"
+   
+    5. Now, go to C:\xampp\sendmail and open sendmail.ini file.
+    6. Find [sendmail] in the file
+    7. Search and pass the following values
+        -   smtp_server=smtp.gmail.com
+            smtp_port=587
+            error_logfile=error.log
+            debug_logfile=debug.log
+            auth_username=YourGmailId@gmail.com
+            auth_password=Your-Gmail-Password
+            force_sender=YourGmailId@gmail.com(optional)
+         
