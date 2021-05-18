@@ -1,0 +1,7 @@
+    /*
+        PHP Session: 
+            - A session is a way to store information (in variables) to be used across multiple pages.
+            - Superglobal variable which catch values and put them into session variables,
+              and before that you have to start a session on every page you intend to use that
+            - By default, session variables last until the user closes the browser.
+    */

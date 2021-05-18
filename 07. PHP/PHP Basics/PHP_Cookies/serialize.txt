@@ -1,0 +1,11 @@
+/*
+
+    => serialize(data):-
+        - to convert a value to a sequence of bits, so that it can be stored in a file, 
+          a memory buffer, or transmitted across a network. 
+
+
+    => unserialize(serializedData) :-
+        - Convert serialized data back into actual data:
+
+*/

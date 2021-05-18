@@ -1,0 +1,22 @@
+/*
+
+   Cookies: 
+     -  A cookie is a small file that the server embeds on the user's computer.
+     -  Each time the same computer requests a page with a browser, it will send the cookie too.
+
+    
+    1. Set a cookie 
+        - setcookie(name, value, expiresIn, path, domain, secure, httponly)
+
+    2. Get a cookie
+        - using $_COOKIE[name] superglobal
+
+    3. Update a cookie
+        - setcookie(name, modifiedValue)
+        - where name - cookie name which you want to modify
+
+    4. Delete a cookie
+        - setcookie(name, value, expiresInPast)
+        - set expiry date to past
+
+*/
