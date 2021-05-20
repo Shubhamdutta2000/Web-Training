@@ -1,0 +1,5 @@
+node modules folder have been generated
+
+we dont push these files or information sensative files to github
+
+that's why we use .gitignore

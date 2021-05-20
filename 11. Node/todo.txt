@@ -1,0 +1,50 @@
+1. Intro to node
+
+2. Functional Expression
+
+3. Modules and require
+
+4. Creating server in node js only
+
+5. whats more in node js
+    - inbuilt module of node:
+        http -> helps to create server
+        os -> gives details of os
+        fs -> helps to manage file system
+            Creating and deleting files Reading and writing files
+
+
+6. npm -
+       /*
+            npm == node package manager
+            It is a 3rd party package system means
+            open source of library for node js which helps us to perform certain types of task 
+            We can find anything in it
+
+            site: https://www.npmjs.com
+
+        */
+
+
+7. Express js  - popular framework for building web applications in NodeJS
+
+    i. Creating server in express js and nodemon
+    ii. Express Middleware
+    iii. GET Request     (Discuss POST request in ejs module)
+    iv. Express Routes
+            - Routing is how you direct the user's requested URL to retrieve the appropriate 'page'
+              or save the submitted form
+    v. Express routes params
+    vi. Render html page using routes
+    vii. Serving static files in Express
+            - To serve static files such as images, CSS files, and JavaScript, html files,
+              use the express.static built-in middleware function in Express.
+
+
+8. ES6 :- 
+    - ES6 is a set of rules for writing modern js (optional needs to learn vanilla js first)
+
+
+9. Intro to template engine - EJS (next module)
+
+10. gitignore
