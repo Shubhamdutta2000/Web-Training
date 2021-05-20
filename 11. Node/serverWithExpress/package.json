@@ -1,0 +1,14 @@
+{
+  "name": "server-with-express",
+  "version": "1.0.0",
+  "description": "Web server with express",
+  "main": "express.js",
+  "scripts": {
+    "start": "node express.js"
+  },
+  "author": "Shubham Dutta",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
