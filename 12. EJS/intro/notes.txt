@@ -1,0 +1,44 @@
+* EJS:-
+    - html integrated with js templating
+    
+* Install EJS
+    - npm install ejs
+
+    - app.set("view engine", "ejs");  -  Telling express that we are using EJS
+
+    - Render ejs page with res.render('fileName', data(optional))
+      Pass data from server file to ejs file through 2nd parameter as an object
+
+    - res.render() will look in a views folder for the view of html/ejs file.
+      So create a view folder for your ejs files
+
+    - Tags - Throgh these we can pass dynamic content through ejs file
+        * <% %>
+            - Control flow
+            - Can use here loop, if-else statement etc.
+
+        * <%= %>
+            - Outputs the value into the template
+            - view any variable in ejs file
+
+        * <%- %>
+            - Outputs the unescaped value into the template
+            - Used for include other templating page
+
+        * <%# %>
+            - Comment tag, no execution, no output
+
+* body-parser
+        - Node.js middleware for parsing incoming body request.
+
+        - bodyparser.urlencoded({extended: true})
+            * Data in this encoding is formatted like a query string you'd see in a URL ( as key-value pair)
+            * For example: name=Shubham&state=wb
+
+        - bodyParser.json() - Parses JSON-formatted text for bodies
+        - bodyParser.text() - Parses plain-text for bodies
+
+        - we call app.use(...) before defining our route.
+          This will ensure that the body-parser will run before our route,
+          which ensures that our route can then access the parsed HTTP POST body.
+

@@ -15,5 +15,4 @@ function callFunction(fun){
     fun();
 }
 
-
 callFunction(sayBye);

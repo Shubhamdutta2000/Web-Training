@@ -1,0 +1,9 @@
+What is ejs
+
+What is view
+
+Pass dynamic content through ejs
+
+Post request
+
+body praser

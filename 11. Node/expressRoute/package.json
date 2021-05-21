@@ -1,0 +1,16 @@
+{
+  "name": "express-route",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Routes.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node Routes.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
