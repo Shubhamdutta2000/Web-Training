@@ -1,0 +1,26 @@
+<!--
+    EJS = Extended JavaScript
+    html integrated with js templating
+-->
+
+<%- include('./partials/header.ejs') %> 
+<%- include('./partials/nav.ejs') %>
+
+<h1>You are viewing the profile of <%= person %></h1>
+<h4>
+  <strong>Age:</strong>
+  <%= data.age %>
+</h4>
+<h4>
+  <strong> Job: </strong>
+  <%= data.job %>
+</h4>
+<h4>
+  <strong>Hobbies :</strong>
+  <!--Uisng js in ejs-->
+  <% data.hobbies.forEach(function(item){ %>
+      <span><%= item %></span>
+  <% }) %>
+</h4>
+
+<%- include('./partials/footer.ejs') %>

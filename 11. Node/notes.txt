@@ -11,19 +11,20 @@
         http -> helps to create server
         os -> gives details of os
         fs -> helps to manage file system
-            Creating and deleting files Reading and writing files
+            Reading, writing, creating and deleting files
+
 
 
 6. npm -
-       /*
-            npm == node package manager
-            It is a 3rd party package system means
-            open source of library for node js which helps us to perform certain types of task 
-            We can find anything in it
+        - npm == node package manager
+        - It is a 3rd party package system means
+          open source of library for node js which helps us to perform certain types of task 
+          We can find anything in it
+            * site: https://www.npmjs.com
 
-            site: https://www.npmjs.com
+        - 1st initialize npm in particular project with `npm init`
+        - Then install whatever package you are using
 
-        */
 
 
 7. Express js  - popular framework for building web applications in NodeJS
@@ -41,10 +42,18 @@
               use the express.static built-in middleware function in Express.
 
 
+
 8. ES6 :- 
     - ES6 is a set of rules for writing modern js (optional needs to learn vanilla js first)
+    - Configure ES6 in project
+        * add (type: module) in package.json file
 
 
-9. Intro to template engine - EJS (next module)
+9. gitignore
+    -  Specifies intentionally untracked files to ignore
+    - It basically hides particular files from git
+    - we dont push information sensative files to github that's why we use .gitignore
+    - node modules folder have been generated which we don't push to github
 
-10. gitignore
+
+10. Intro to template engine - EJS (next module)

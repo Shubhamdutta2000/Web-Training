@@ -1,6 +1,13 @@
 const express = require("express");
 
+/*
+  include express from 'express';
+*/
+
 const app = express();
+
+// serving static files from views folder
+app.use(express.static("views"));
 
 // adding get request
 app.get("/", (req, res) => {
@@ -17,3 +24,5 @@ const port = 3000;
 app.listen(port, () => {
   console.log("Successfully listening on port " + port);
 });
+
+//For contineous running of server : NODEMON

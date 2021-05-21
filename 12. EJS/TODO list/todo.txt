@@ -1,0 +1,5 @@
+what is modularise code
+
+MVC
+
+what are static files
