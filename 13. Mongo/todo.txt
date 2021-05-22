@@ -1,0 +1,9 @@
+What is mongo
+
+connecting to atlas
+
+Crud operations
+
+adding database to our project
+
+APIs
