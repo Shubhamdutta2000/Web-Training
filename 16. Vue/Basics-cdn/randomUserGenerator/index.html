@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn Vue with cdn</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div id="app">
+      <img v-bind:class="gender" v-bind:src="image" :alt="firstName" />
+      <h1>Name: {{firstName}} {{lastName}}</h1>
+      <h3>Email: {{email}}</h3>
+      <button v-bind:class="gender" v-on:click="getUser()">Change User</button>
+    </div>
+
+    <!-- CDN for vue -->
+    <script src="https://unpkg.com/vue@3.0.11"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>

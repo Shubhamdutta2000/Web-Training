@@ -1,0 +1,23 @@
+1. Structure of app
+2. Header component
+3. Component Props
+4. Button Component
+5. Events
+6. Add initial Task Data with created() method
+7. View Task Data in screen with v-for loop
+8. Add Single task Component for viewing each task
+9. Dynamic Classes for reminder of particular task
+10. Delete Task: Emit event and event listener in App
+11. Toggle Reminder Task: Emit event and event listener in App
+12. Add Task: add another component, AddTask & v-model ( for form binding)
+13. Toggle 'New Task' button onClick
+    - add showForm data on App.vue
+    - emit event 'btn-click' onClick Button
+    - event listener of 'btn-click' on Header Component and emit another event 'toggle-add-task'
+    - event listener of 'toggle-add-task' on App and toggle showForm value
+    - Change in text and color of button dynamically in Header Component by passing props of showForm from App.vue
+
+14. Build for Production and run build files with serve npm package
+    - serve -d dist
+15. Backend Setup with json-server (fake api) and implement CRUD operation
+16. Implementing the Router 

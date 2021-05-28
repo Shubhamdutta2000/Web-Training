@@ -1,0 +1,197 @@
+1. Vue with cdn:
+
+- Declarative Rendering
+
+	At the core of Vue.js is a system that enables us to declaratively render data to the DOM using 
+	straightforward template syntax:
+		i.  template (for html view)
+		ii. data() function for declaring props
+
+
+- Directive:- Directives are prefixed with v- to indicate that they are special attributes provided by Vue
+
+
+- Bind element attributes
+	* Syntax: - v-bind:attribute
+		  - :attribute
+	* It is used in html as a attribute for getting data value from props variable
+
+
+- Handling Events:
+	* Syntax: - v-on:event
+		  - @event
+	* we can use the v-on directive to attach event listeners that invoke methods on our instances
+
+
+- Conditional Statement:
+	* Syntax: v-if, v-else
+		  v-show (for hiding the element with css display: none)
+
+
+- loop
+	* Syntax: v-for="element in array"
+
+
+
+
+2. Vue with CLI
+
+	A. install cli version globally
+		npm i -g @vue/cli
+
+	B. create vue app
+		vue create app-name
+	
+
+	C. Structure:-
+		i.   template
+		ii.  script
+		iii. style (scoped - for particulat that component)
+
+
+	D. Props:-
+		*  pass data between components; from parent components to child components
+
+		// @ METHOD 1:-
+			 props: ['title'],
+
+	        // @ METHOD 2:-
+  			 props: {
+  			     title: String
+  			 }
+
+
+	E. methods 
+		* for local functions of component
+
+
+	F. data() function
+
+
+	G. created() function
+		* lifecycle method where you make http request to load some data  when your component loads
+
+
+	H. Each component can only contain a single root element, which prevent from conditional rendering
+	  or list rendering on the root element
+		EX:
+			<template>
+				// root element
+				<div>
+					// views
+				</div>
+			</template>
+
+
+	I. Elements in iteration (i.e with v-for directives) expect to have 'v-bind:key' directives.
+		EX: 
+			<template>
+				<div>
+					<div :key="task.id" v-for="task in tasks" >
+						<h1>{{ task.title }} </h1>
+					</div>
+				</div>
+			</template>
+
+	
+	J. Dynamic Classes and Styles
+		# REFERENCE: https://v3.vuejs.org/guide/class-and-style.html#array-syntax
+
+		# Array Syntax 
+			- We can pass an array to :class to apply a list of classes:
+			- EX:-
+				1. Pass list of class value in array
+
+					* <template>
+					      <div :class="[activeClass, errorClass]"></div>
+					  </template>
+
+					* <script>
+					   	  data() {
+							 return {
+								activeClass: 'active',
+								errorClass: 'text-danger'
+							 }
+						  }
+					  </script>
+
+					* Rendered as		
+						<div class="active text-danger"></div>
+					
+
+				2. toggle a class in the list conditionally, with a ternary expression:
+					* <template>
+						<div :class="[isActive ? activeClass : '', errorClass]"></div>
+					  </template>
+						  
+					* <script>
+					   	  data() {
+							 return {
+								isActive: true
+								activeClass: 'active',
+								errorClass: 'text-danger'
+							 }
+						  }
+					  </script>
+
+					* Rendered as		
+						<div class="active text-danger"></div>
+
+
+	K. Custom Events:-
+		- Custom Emitted events can be defined on the component via the emits option.
+		- Define events as:
+				* $emit('myEvent', value) or this.$emit('myEvent', value)      - (this needed if written in methods)
+					- where 1st parameter is the custom event name and 
+						2nd parameter is the piece of data that we want to send along with it 
+		- Add event listener to the parent component as:
+				* <my-component @myEvent="doSomething"></my-component>
+
+
+	L. Form Binding:
+		- v-model directive to create two-way data bindings on form input, textarea, and select elements. 
+		- It automatically picks the correct way to update the element based on the input type
+		- Declare the initial value of imput element on the JavaScript side, inside the data option of component and put that variable in v-model.
+
+		EX:
+			<template>
+				<input v-model="message" placeholder="edit me">
+				<p>Message is: {{ message }}</p>
+			</template>
+
+			<script>
+				data() {
+					return {
+						message: ""
+					}
+				}
+
+
+	M. Vue Router 
+		- Create a router folder and add index.js for implementing router to the app
+		- Create a router with createRouter
+			EX:-
+				const routes = [
+					{
+						path: "/",
+						name: "Home",
+						component: Home,
+					},
+					{
+						path: "/about",
+						name: "About",
+						component: About,
+					},
+				];
+
+		- router-view component:
+			* A functional component that renders the matched component for the given path. 
+		- router-link component:-
+			* component for enabling user navigation in a router-enabled app. 
+			* The target location is specified with the to prop.
+
+
+	N. Build For Production and run
+		-  npm run build
+			* This bundles everything in the dist directory which is ready to be deployed on static file server!
+
