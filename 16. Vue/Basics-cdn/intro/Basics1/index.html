@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn Vue with cdn</title>
+    <style>
+      .box {
+        padding: 100px 0;
+        width: 400px;
+        text-align: center;
+        background: #ddd;
+        margin: 20px;
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Root element for vue -->
+    <div id="app">
+      <!-- Can add template in here also -->
+
+      <!-- bind element attributes -->
+      <img v-bind:src="image" :alt="firstName" />
+      <h2>First Name: {{firstName}}</h2>
+      <h2>Last Name: {{lastName}}</h2>
+
+      <!-- Event handling -->
+      <!-- <button v-on:click="getUser()">Change User</button> -->
+
+      <!-- Pass Value as arguement -->
+      <button @click="getUser('Jane', 'Doe')">Change User</button>
+      <br />
+      <br />
+
+      <!-- Conditional Rendering -->
+      <div v-if="showAge">
+        <h3>Age: {{age}}</h3>
+      </div>
+
+      <!-- toggle button for viewing age -->
+      <button @click="toggleAge">
+        <span v-if="showAge">Hide Age</span>
+        <span v-if="!showAge">Show Age</span>
+      </button>
+      <br />
+
+      <!-- v-show directive (hides element with css display: none) -->
+      <div v-show="showAge">Showing Age...</div>
+
+      <br />
+      <br />
+
+      <!-- mouse events -->
+      <div class="box" @mouseover="handleEvent($event, 5)">
+        mouseover (enter)
+      </div>
+      <div class="box" @mouseleave="handleEvent">mouseleave</div>
+      <div class="box" @dblclick="handleEvent">double click me</div>
+      <div class="box" @mousemove="handleMousemove">
+        position {{ x }} {{ y }}
+      </div>
+    </div>
+
+    <!-- CDN for vue -->
+    <script src="https://unpkg.com/vue@3.0.11"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
