@@ -10,7 +10,7 @@ hosted on GCP
 extention of gcp 
 moto- : the best code is no code at all
 
-1. Deploy
+1.Deploy
 2.Auth
 3.db
 4. Cloud storage

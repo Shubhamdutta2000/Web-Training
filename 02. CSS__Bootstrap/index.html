@@ -10,11 +10,17 @@
     <link rel="stylesheet" href="./style.css">
     <title>CSS Practice</title>
     <style>
-        #hel {
+        #hel  {
             color: blue;
             background-color: burlywood;
         }
-    
+        .hel {
+            color: brown;
+            background-color: blue;
+        }
+        div {
+            color: black;
+        }
     </style>
 </head>
 <body>
@@ -28,7 +34,7 @@
     -->
 
     <!-- inline styling -->
-    <div style="color: blue;">Hello World</div> <!-- not preferable -->
+    <div id="hel" class="hel"  style="color: aqua;">Hello World</div>
 
     <!-- internal styling -->
     <div id="hel">Hello World</div> <!-- medium preferable -->
@@ -39,8 +45,8 @@
 
 
 
-    <div class="content">
-        <h2 class="html">Html</h2>
+    <div class="form">
+        <div class="html">Html</div>
         <h3 class="html">CSS</h2>
         <h4 class="html">JS</h2>
         <h2 class="react">React</h2>
@@ -67,7 +73,7 @@
 <div class="content2">
     <h2 id="heading2" class="heading2">Heading 2</h2>
     <h3 id="heading3" class="heading3">Heading 2</h3>
-    <h3 id="heading3" class="heading4">Heading 2</h3>
+    <h3 id="heading4" class="heading4">Heading 2</h3>
 </div>
 
 
@@ -84,8 +90,6 @@
     <div class="content"></div>
     <div class="content2"></div>
 </div>
-
-
     
 </body>
 </html>

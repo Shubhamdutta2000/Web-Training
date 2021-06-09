@@ -39,8 +39,6 @@
 		* pop()  		   : remove from end
 		* shift()  		   : remove from beginning
 
-	- splice operation (create, delete and update elements in array)
-		* syntax:- splice(start, deleteCount, value)
 	- indexOf()
 
 

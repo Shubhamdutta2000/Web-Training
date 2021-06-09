@@ -24,30 +24,25 @@
    - Universal Selector
    - Combinator Selector (relationship between selectors)        
         * descendant selector (space) || child selector (>)
-        * adjacent sibling selector (+)
-        * general sibling selector (~)
     - Attribute Selector  (select elements with a specified attribute)
 	* element[attribute]
-	* element[attribute = val]
-	* element[attribute ~= val]  	(contains val)
-	* element[attribute ^= val]	(starts with val)
-	* element[attribute $= val]	(ends with val)
 	 
 
 5. Selector Specifificity
-	(inline styles > id > classes/attributes/pseudo-class > elements )
+	(inline styles > id > classes/attributes > elements )
 
 
 6. Conflicts in css
 	- Cascades rules: 		
-	        1. Find all declarations whose selectors match a particular element.
+            1. Find all declarations whose selectors match a particular element.
     	    2. Sort the selectors by specificity
     	    3. Sort by order specified (last css applied if same level of specificity)
 
 
 7. Width, height
 
-8. margin, padding, border
+8. margin, padding,  border
+(top -> right -> bottom -> left)
 
 9. float
 
@@ -69,7 +64,6 @@
 15. Box shadow
 	- none|h-offset v-offset blur spread color
 
-
 16. CSS flexbox  - makes it easier to design flexible responsive layout structure without using float or positioning.
 
 	- flex-container		- flex-items
@@ -87,6 +81,14 @@ Project
 Bootstrap
 -by projects
 
+How to make triangle?
+
+.box {
+  width: 0;
+  height: 0;
+  border: solid 30px;
+  border-color: transparent transparent black transparent;
+}
 
 
 How To Center an element:

@@ -1,7 +1,20 @@
 /* heading */
 
 * {
-  margin: 4px;
+  margin: 10px;
+}
+
+/* #content .html {
+  color: aquamarine;
+} */
+
+[name="fname"] {
+  background-color: rgb(51, 155, 247);
+}
+
+[href="https://www.youtube.com"]
+{
+  background-color: rgb(0, 0, 0);
 }
 
 /* #leh {
@@ -9,36 +22,6 @@
   background-color: burlywood;
   float: right;
 }  */
-
-[id^="l"] {
-  color: blue;
-  background-color: burlywood;
-  float: right;
-}
-
-/* Descendant Selector */
-/* .content .html {
-  color: rgb(0, 35, 231);
-} */
-
-/* Child Selector */
-/* .content > .react {
-  color: darkgoldenrod;
-} */
-
-/* Adjacent Sibling Selector */
-.html + .html {
-  color: darkgoldenrod;
-}
-
-.html + .html + .html {
-  color: red;
-}
-
-/* General Sibling Selector */
-/* .content ~ .html {
-  color: darkgoldenrod;
-} */
 
 /* Selector with attribute */
 a[target="_blank"] {
@@ -55,30 +38,28 @@ input[name="fname"] {
    2. id selector                           - 100
    3. class selector/ attribute selector    - 10
    4. Element                               - 1
-   */
+*/
 
-/* 11 */
-.content2 h2 {
+/* 110  */
+.content2 #heading2 {
   color: turquoise;
 }
 
-/* 11 */
-div .heading2 {
+/* 20 */
+.content2 .heading2 {
   color: yellowgreen;
 }
 
 /* 1rem = 16px */
 
 .box {
-  margin: 10px 20px 40px 100px;
+  margin: 10px 1px 100px 400px;
   background-color: teal;
-  padding: 40px 30px;
-  width: 100px;
-  height: 100px;
+  padding: 100px 10px 50px 2px;
   border: 2px solid black;
   border-radius: 10px;
   font-size: 2rem; /* 32px */
-  font-weight: 900;
+  font-weight: 100;
   color: aqua;
   float: right;
 }
@@ -88,15 +69,15 @@ div .heading2 {
 */
 
 .box2 {
-  background-image: url("../01.HTML/testImage.png");
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/1200px-Image_created_with_a_mobile_phone.png");
   background-size: cover;
-  background-position: center;
   padding: 100px;
   margin-top: 50px;
   width: 200px;
   height: 100px;
   position: relative;
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.739);
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.739);
+  margin-bottom: 1000px;
 }
 
 .box2 > .content {
@@ -104,7 +85,7 @@ div .heading2 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 61;
+  z-index: 1;
   background-color: blueviolet;
   width: 50px;
   height: 50px;
