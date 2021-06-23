@@ -31,3 +31,13 @@ database.ref("messages").on("value", (snapshot) => {
     console.log(t);
   }
 });
+
+// JS Template Literal
+
+// Arrow function - JS ES6
+
+// BaaS - Backend As a Service
+
+// GOAL
+// 1. Add data to database of firebase
+// 2. Show or Read data from database to the client side

@@ -1,8 +1,4 @@
 college Project
-Initialy launched as noSQL db
-
-
-
 
 Backend as service
 
@@ -14,13 +10,6 @@ moto- : the best code is no code at all
 2.Auth
 3.db
 4. Cloud storage
-
-
-
-Project setup:
-1. install node js
-2. Install firebase CLI 
-3. vs firebase explorer (optional)
 
 
 We will work on database(most common)...
