@@ -1,5 +1,7 @@
 # WEB TRAINING
 
+> Full Full Stack Syllabus
+
 ### Syllabus
 
 - Module 1 : Introduction
