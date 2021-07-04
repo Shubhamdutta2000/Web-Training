@@ -1,6 +1,6 @@
 # WEB TRAINING
 
-> Full Full Stack Syllabus
+> Full Stack Syllabus
 
 ### Syllabus
 
