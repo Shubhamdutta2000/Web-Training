@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <style>
+      .test {
+        display: none;
+      }
+    </style>
+  </head>
   <body>
     <h2>My First Web Page</h2>
-    <p>My First Paragraph.</p>
+    <p id="para">My First Paragraph.</p>
 
     <p id="demo"></p>
 
-    <button onclick="calculateAge(1990, 'Shubham')">
-      Calculate Shubham Age
-    </button>
-    <button onclick="calculateAge(1996, 'Samrat')">Calculate Samrat Age</button>
+    <button id="shubham">Calculate Shubham Age</button>
+    <button id="anik">Calculate Anik Age</button>
 
     <script>
       // define
@@ -18,6 +23,16 @@
         console.log(age);
         document.getElementById("demo").innerHTML = name + " " + age;
       }
+
+      document.getElementById("shubham").addEventListener("dblclick", () => {
+        calculateAge(1990, "Shubham");
+        document.getElementById("para").setAttribute("class", "test")
+      });
+
+      document.getElementById("anik").addEventListener("dblclick", () => {
+        calculateAge(1994, "Anik");
+        document.getElementById("para").classList.remove("test")
+      });
     </script>
   </body>
 </html>

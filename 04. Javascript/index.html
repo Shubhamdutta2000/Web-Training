@@ -8,13 +8,123 @@
   </head>
   <body>
     <h1>JS PRACTICE</h1>
+    <p id="test"></p>
+    <button></button>
 
+    <p>Hello World 2</p>
     <!-- external JS -->
-    <script src="./cheatsheet.js"></script>
+    <!-- <script src="./cheatsheet.js"></script> -->
 
     <!-- Internal JS -->
     <script>
-      // JS CODE
+      document.querySelector("#test").innerHTML = "<h4>Hello World</h4><br/>";
+      console.log(document.getElementById("test").getAttribute("id"));
+
+      document.querySelector("#test").setAttribute("class", "test3");
+
+      document.getElementById("test").style.backgroundColor = "blue";
+      console.log(document.querySelector(".test3"));
+
+      // var name = "Anik"; //  Aniket + Avik
+      // var age = 12;
+      // console.log(name + " " + age); // string + number -> concatenation
+
+      // var age = 12;
+
+      // // non-zero -> true
+      // // zero -> false
+      // // age <= 16 -> teenager
+      // // age >= 18 -> Adult
+
+      // var text;
+      // if (age < 18) {
+      //   text = name + " with age of " + age + " is not able to vote";
+      // } else {
+      //   text = name + " with " + age + " is able to vote";
+      // }
+
+      // // function defination
+      // function ableToVote(name, age) {
+      //   // parameter
+      //   var text;
+      //   if (age < 18) {
+      //     text = name + " with age of " + age + " is not able to vote";
+      //   } else {
+      //     text = name + " with " + age + " is able to vote";
+      //   }
+      //   return text;
+      // }
+
+      // var ableToVote = (name, age) => {
+      //   // parameter
+      //   let text;
+      //   if (age < 18) {
+      //     text = name + " with age of " + age + " is not able to vote";
+      //   } else {
+      //     text = name + " with " + age + " is able to vote";
+      //   }
+      //   return text;
+      // };
+
+      // var test = "123";
+      // var test = "345";
+
+      // // global scope
+      // let test2 = "234";
+
+      // {
+      //   // local scope
+      //   let test2 = "123";
+      // }
+
+      // //   for(iniutialization; condition; update) {
+      // //     //code
+      // //   }
+
+      // // // initialization
+      // // while(condition) {
+      // //   //code
+      // //   //update
+      // // }
+
+      // for (var i = 1; i <= 5; i++) {
+      //   console.log(i);
+      // }
+
+      // // call
+      // var text1 = ableToVote("Shubham", 25); //arguement
+      // var text2 = ableToVote("Aniket", 14);
+      // console.log(text1);
+      // console.log(text2);
+
+      // // array
+      // var arrayName = ["Shubham", "Aniket", 1, "Avik"];
+
+      // console.log(arrayName[1]);
+      // console.log(arrayName);
+      // // array print
+      // // for (var i = 0; i < arrayName.length; i++) {
+      // //   console.log(arrayName[i]);
+      // // }
+
+      // // push or unshift - A
+      // arrayName.push("Anik");
+      // arrayName.unshift("Ram");
+
+      // console.log(arrayName.indexOf("ik"));
+
+      // // pop or unshift - D
+      // arrayName.pop();
+
+      // // for
+      // // while
+      // // forEach - better for array looping
+      // arrayName.forEach((param) => {
+      //   // R
+      //   console.log(param);
+      // });
+
+      // document.getElementById("test").innerHTML = text;
     </script>
   </body>
 </html>
