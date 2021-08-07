@@ -1,0 +1,114 @@
+body {
+  background-color: #f0f2f5;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 200px;
+}
+
+.left-side {
+  width: 46%;
+  margin-left: 8%;
+}
+
+.left-side h1 {
+  color: #1877f2;
+  font-size: 3.8rem;
+  font-weight: bolder;
+}
+
+.left-side h2 {
+  color: #1c1e21;
+  font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  line-height: 28px;
+  font-size: 1.8rem;
+}
+
+.right-side {
+  width: 54%;
+}
+
+.right-side .form {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+  width: 28rem;
+  padding: 1.6rem;
+  border-radius: 8px;
+}
+
+.right-side .form input {
+  padding: 14px 24px;
+  width: 89%;
+  margin-bottom: 1.4rem;
+  border: none;
+  outline: none;
+  border: 2.2px solid #d4d9df;
+  border-radius: 8px;
+  font-size: medium;
+}
+
+.right-side .form .Login-button {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #1877f2;
+  color: #fff;
+  font-size: 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.right-side .form .New-Account {
+  width: 80%;
+  margin: 30px 40px;
+  padding: 0.8rem;
+  background-color: #42b72a;
+  color: #fff;
+  font-size: 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.right-side .form .Forgot {
+  margin-left: 40%;
+}
+
+.right-side #text {
+  margin-left: 14%;
+}
+
+/*Mobile view */
+@media only screen and (max-width: 500px) {
+  .container {
+    flex-direction: column;
+    margin-top: 60px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .left-side h1 {
+    margin-left: 40%;
+    font-size: 45px;
+  }
+
+  .left-side h2 {
+    display: none;
+  }
+
+  .right-side .form input {
+    width: 80%;
+  }
+
+  .right-side {
+    width: 100%;
+  }
+
+  .right-side .form {
+    width: 85%;
+  }
+}

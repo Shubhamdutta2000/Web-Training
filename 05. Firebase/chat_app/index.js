@@ -15,22 +15,36 @@ function writeUserData() {
   document.getElementById("message").value = "";
 }
 
-//Read data from database
-database.ref("messages").on("value", (snapshot) => {
-  var messages = snapshot.val();
-  //delete previous messages from div
+
+// read data
+database.ref("messages/").on('value', (snapshot) => {
+  const messages = snapshot.val();
+  console.log(messages);
+  // previous message delete
   document.getElementById("main-container").innerHTML = "";
 
   for (var key in messages) {
     var message = messages[key];
-    var x = document.createElement("P");
-    var t = document.createTextNode(`${message.name}: : ${message.message}`);
-    x.classList.add("bubble");
-    x.appendChild(t);
+    console.log(message.message);
+    console.log(message.name);
+
+    const x = document.createElement("p");
+    x.innerHTML = message.name + ": " + message.message;
+    console.log(x);
+    if (message.name === Name) {
+      x.classList.add("bubble-right");
+    } else {
+      x.classList.add("bubble-left");
+    }
+
+    // add to html document
     document.getElementById("main-container").appendChild(x);
-    console.log(t);
+
   }
 });
+
+
+
 
 // JS Template Literal
 

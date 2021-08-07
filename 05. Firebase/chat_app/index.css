@@ -37,7 +37,19 @@ body {
   color: #000;
 }
 
-.bubble {
+.bubble-left {
+  margin-top: 5px;
+  width: 75%;
+  border-radius: 15px;
+  padding: 10px 20px 10px 20px;
+  display: flex;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.25);
+  float: left;
+  background-color: #1289fe;
+  color: #fff;
+}
+
+.bubble-right {
   margin-top: 5px;
   width: 75%;
   border-radius: 15px;

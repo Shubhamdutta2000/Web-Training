@@ -29,7 +29,7 @@
 	 
 
 5. Selector Specifificity
-	(inline styles > id > classes/attributes > elements )
+	(inline styles (1000) > id (100) > classes/attributes {10} > elements (1) )
 
 
 6. Conflicts in css
@@ -42,7 +42,7 @@
 7. Width, height
 
 8. margin, padding,  border
-(top -> right -> bottom -> left)
+(top -> right -> bottom -> left) -> clockwise
 
 9. float
 
@@ -68,10 +68,10 @@
 
 	- flex-container		- flex-items
 	     * display			     * order
-	     * flex-direction		     * flex-grow
+	     * flex-direction		 * flex-grow
 	     * flex-wrap		     * flex-shrink
 	     * flex-flow		     * flex-basis 
-	     * justify-content		     * align-self
+	     * justify-content		 * align-self
 		(along main axis)	     
 	     * align-items
 		(along cross axis)

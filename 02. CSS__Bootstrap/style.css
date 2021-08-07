@@ -40,14 +40,16 @@ input[name="fname"] {
    4. Element                               - 1
 */
 
-/* 110  */
-.content2 #heading2 {
-  color: turquoise;
+#content2 .heading2 {
+  color: aqua;
 }
 
-/* 20 */
-.content2 .heading2 {
-  color: yellowgreen;
+#heading2 {
+  color: black;
+}
+
+.content2 #heading2 {
+  color: blue;
 }
 
 /* 1rem = 16px */
@@ -57,11 +59,13 @@ input[name="fname"] {
   background-color: teal;
   padding: 100px 10px 50px 2px;
   border: 2px solid black;
-  border-radius: 10px;
-  font-size: 2rem; /* 32px */
-  font-weight: 100;
+  border-radius: 50%;
+  width: 200px;
+  height: 100px;
   color: aqua;
-  float: right;
+  font-weight: bolder;
+  font-size: 40px;
+  float: left;
 }
 
 /* 
@@ -69,23 +73,23 @@ input[name="fname"] {
 */
 
 .box2 {
+  position: relative;
   background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/1200px-Image_created_with_a_mobile_phone.png");
   background-size: cover;
   padding: 100px;
   margin-top: 50px;
   width: 200px;
   height: 100px;
-  position: relative;
-  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.739);
   margin-bottom: 1000px;
+  box-shadow: 10px 20px 10px 0px rgba(0, 0, 0, 0.733);
 }
 
 .box2 > .content {
   position: absolute;
-  top: 50%;
   left: 50%;
+  top: 50%;
   transform: translate(-50%, -50%);
-  z-index: 1;
+  z-index: 2;
   background-color: blueviolet;
   width: 50px;
   height: 50px;
@@ -93,9 +97,9 @@ input[name="fname"] {
 
 .box2 > .content2 {
   position: absolute;
-  top: 50%;
   left: 50%;
-  z-index: 2;
+  top: 50%;
+  z-index: 4;
   background-color: rgb(168, 231, 21);
   width: 50px;
   height: 50px;
