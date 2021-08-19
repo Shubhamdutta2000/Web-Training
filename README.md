@@ -4,7 +4,7 @@
 
 - Module 1 : Introduction
 - Module 2 : HTML
-- Module 3 : Css & with web Design
+- Module 3 : CSS & with web Design
 - Module 4 : Bootstrap and other styling framework
 - Module 5 : Git Github
 - Module 6 : JavaScript
