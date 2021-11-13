@@ -17,7 +17,7 @@
             - Control flow
             - Can use here loop, if-else statement etc.
 
-        * <%= %>
+        * <%= name %>
             - Outputs the value into the template
             - view any variable in ejs file
 
@@ -25,8 +25,9 @@
             - Outputs the unescaped value into the template
             - Used for include other templating page
 
-        * <%# %>
+        * <%# This is a comment %>
             - Comment tag, no execution, no output
+
 
 * body-parser
         - Node.js middleware for parsing incoming body request.

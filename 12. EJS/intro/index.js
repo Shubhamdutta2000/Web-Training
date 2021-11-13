@@ -37,7 +37,8 @@ app.get("/profile/:name", function (req, res) {
 
 //Post Request (for submitting contact form)
 app.post("/contact", function (req, res) {
-  console.log(req.body.name);
+  const { name } = req.body;
+  console.log(name);
   res.render("contact");
 });
 
