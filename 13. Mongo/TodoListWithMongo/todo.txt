@@ -1,0 +1,3 @@
+added mongo using mongodb
+
+intro to .env

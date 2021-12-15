@@ -21,6 +21,11 @@ INSERT INTO `students` (
     ) VALUES ('Avik', '12', '99', '99');
 
 
+INSERT INTO `students` (
+    `student_name`, `student_roll`, `marks`, `percenntage`
+    ) VALUES ('Akash', '11', '100', '100');
+
+
 
 ///////////////////////////////////// DELETE particular Row /////////////////////////////////////
 
