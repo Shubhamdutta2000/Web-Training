@@ -1,4 +1,0 @@
-Components
-integrate React-bootstrap
-css
-Conditional statements
