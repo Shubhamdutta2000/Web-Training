@@ -1,0 +1,52 @@
+
+
+/*Footer*/
+
+#footer{
+     position: relative;
+     height: auto;
+     padding: 5%;
+     background-color: #000;
+   }
+
+   
+.footer-icons{
+     padding: 2% 1% 2%;
+     font-size: 1.5rem;
+     text-align: center;
+   }
+   
+  #footer img{
+       height: 70px;
+       width: 70px;
+  }
+   
+   .footer-icons-class:hover
+   {
+     text-shadow: 0.5px 0.5px rgb(150, 150, 150);
+   }
+   
+   .copyright-text
+   {
+     font-family: 'Montserrat', sans-serif;
+     font-weight: 600;
+     line-height: 1.2;
+     color: #8d8d8def;
+   }
+
+   strong{
+     color: white;
+     font-size:16px;
+     
+   }
+
+
+   .social-icons{
+     text-align: center;
+
+   }
+   #name{
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    }

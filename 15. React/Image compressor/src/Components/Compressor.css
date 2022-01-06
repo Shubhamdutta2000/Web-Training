@@ -1,0 +1,65 @@
+.center{
+  text-align: center !important;
+}
+
+.mainContainer{
+  margin: 0px !important;
+  text-align: center;
+}
+
+.row{
+  margin: 5%;
+}
+
+.navbar{
+  z-index: 1041;
+  box-shadow: 0 3px 6px 0 rgba(50,50,50,.3);
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: #abf0e9 !important;
+}
+
+.navbar-content{
+  color: black !important;
+}
+
+.social-icons{
+  margin-right: 10px;
+  box-sizing: border-box;
+  widows: 10% !important;
+  height: 10% !important;
+}
+
+.uploadCard{
+  width: 80%;
+  display: inline-block;
+}
+
+.image{
+  display: inline-block;
+}
+
+
+.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.btn {
+  border: 2px solid gray;
+  color: gray;
+  background-color: white;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 2%;
+}
+
+.upload-btn-wrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
