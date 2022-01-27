@@ -1,0 +1,27 @@
+GET http://localhost:5000/users
+
+
+###
+DELETE http://localhost:5000/users/606a2e3c2311c058f8447150
+
+###
+
+POST http://localhost:5000/users/signup
+Content-Type: application/json
+
+{
+    "username": "hello",
+    "email": "user@gmal.com",
+    "password": "hello :)"
+}
+
+
+###
+
+POST http://localhost:5000/users/login
+Content-Type: application/json
+
+{
+    "email": "user@gmal.com",
+    "password": "hello :)"
+}

@@ -1,0 +1,36 @@
+//Get Reqquest
+GET http://localhost:5000/users/notes
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGE3YTkwNThkZDhmNjZiZTBmYTk3ZGIiLCJpYXQiOjE2MjE2MDA1MzgsImV4cCI6MTY1MzE1ODEzOH0.JYvK0YljUqpx6XF561Ghnc10To80IBAHveUlaDvvQgo
+
+
+
+###
+
+POST http://localhost:5000/users/notes
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGE3YTkwNThkZDhmNjZiZTBmYTk3ZGIiLCJpYXQiOjE2MjE2MDA1MzgsImV4cCI6MTY1MzE1ODEzOH0.JYvK0YljUqpx6XF561Ghnc10To80IBAHveUlaDvvQgo
+
+{
+    "title": "Joy shree daam",
+    "body": "khela hobei"
+}
+
+
+###
+PATCH http://localhost:5000/users/notes/60955d4dd6887340a0d4c1e8 
+Content-Type: application/json
+Authorization: Bearer "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGE3YTkwNThkZDhmNjZiZTBmYTk3ZGIiLCJpYXQiOjE2MjE2MDA1MzgsImV4cCI6MTY1MzE1ODEzOH0.JYvK0YljUqpx6XF561Ghnc10To80IBAHveUlaDvvQgo"
+
+{
+    "title": "Joy shree ram",
+    "body": "erom korle khelbona"
+}
+
+###
+
+DELETE  http://localhost:5000/users/notes/60955d4dd6887340a0d4c1e8 
+Authorization: Bearer "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGE3YTkwNThkZDhmNjZiZTBmYTk3ZGIiLCJpYXQiOjE2MjE2MDA1MzgsImV4cCI6MTY1MzE1ODEzOH0.JYvK0YljUqpx6XF561Ghnc10To80IBAHveUlaDvvQgo"
+
+
+
+
