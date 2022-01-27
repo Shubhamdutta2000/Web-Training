@@ -15,8 +15,6 @@ A Personal note webapp where user can write their own things uniquely
 - Forget Password
 - Email Verification
 
-## Screenshot
-
 ## Tech Stack
 
 - [Node.js](https://nodejs.org/)
@@ -42,13 +40,13 @@ A Personal note webapp where user can write their own things uniquely
 
 ## Api
 
-For more details about the test cases and datas to pass please refer [here](https://github.com/Shubhamdutta2000/mydiary/tree/main/server/http_tests)
+For more details about the test cases and datas to pass please refer [here](https://github.com/Shubhamdutta2000/Web-Training/tree/main/17.%20MERN%20Project/server/http_tests)
 
 ## Build Setup
 
 ```
 # Clone repo and cd into directory
-git clone https://github.com/Shubhamdutta2000/mydiary.git
+git clone https://github.com/Shubhamdutta2000/Web-Training.git
 ```
 
 ```
