@@ -18,10 +18,12 @@ const userSchema = new mongoose.Schema({
   },
 });
 
+  // Method 1 (for hashing hashed password with plain text password)
 userSchema.methods.checkPassword = async function (enteredPassword) {
   return await bcrypt.compare(enteredPassword, this.password);
 };
 
+// Method 2 (for hashing password)
 userSchema.pre("save", async function (next) {
   if (!this.isModified("password")) {
     next();

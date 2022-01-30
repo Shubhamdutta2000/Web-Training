@@ -16,9 +16,8 @@ export const getPosts = () => async (dispatch, getState) => {
     } = getState();
 
     const config = {
-      "Content-Type": "application/json",
       headers: {
-        Authorization: `Bearer ${userInfo.token}`,
+        Authorization: `${userInfo.token}`,
       },
     };
     const { data } = await axios.get(url, config);

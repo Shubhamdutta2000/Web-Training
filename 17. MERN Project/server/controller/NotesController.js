@@ -27,14 +27,11 @@ export const postNotes = async (req, res, next) => {
     body.username = req.user._id;
     console.log(req.body);
     */
-  const accessToken = uuidv4();
 
   const newpost = {
     title: title,
     body: body,
     username: User._id,
-    accessToken: accessToken,
-    isValid: true,
   };
 
   var newNotes = new Note(newpost);
@@ -55,13 +52,13 @@ export const postNotes = async (req, res, next) => {
 // @purpose: PATCH or update the notes
 export const patchNotes = async (req, res) => {
   const { id: id } = req.params;
-  const post = req.body;
+  const {title, body} = req.body;
 
   if (!Mongoose.Types.ObjectId.isValid(id))
     res.status(404).send("No post with that is Found");
 
   // update particular note
-  await Note.findByIdAndUpdate(id, post, {
+  await Note.findByIdAndUpdate(id, {title, body}, {
     new: true,
   });
 
@@ -72,7 +69,7 @@ export const patchNotes = async (req, res) => {
   res.json(updatedNotes);
 };
 
-// @route: DELETE usera/notes/id
+// @route: DELETE usera/notes/:id
 export const deleteNotes = async (req, res) => {
   try {
     const deleteusernote = await Note.deleteOne({

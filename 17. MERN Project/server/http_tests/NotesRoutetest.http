@@ -1,6 +1,6 @@
 //Get Reqquest
 GET http://localhost:5000/users/notes
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGE3YTkwNThkZDhmNjZiZTBmYTk3ZGIiLCJpYXQiOjE2MjE2MDA1MzgsImV4cCI6MTY1MzE1ODEzOH0.JYvK0YljUqpx6XF561Ghnc10To80IBAHveUlaDvvQgo
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWY2NjZmZmQ4OTM5ZTQwMzA0MWYwODciLCJpYXQiOjE2NDM1MzgxOTEsImV4cCI6MTY3NTA5NTc5MX0.iJPlx2bkKRJiBloAhnhNdriIcWEbp4JOEVNbFl9w_gI
 
 
 
@@ -8,18 +8,18 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGE3YTkwN
 
 POST http://localhost:5000/users/notes
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGE3YTkwNThkZDhmNjZiZTBmYTk3ZGIiLCJpYXQiOjE2MjE2MDA1MzgsImV4cCI6MTY1MzE1ODEzOH0.JYvK0YljUqpx6XF561Ghnc10To80IBAHveUlaDvvQgo
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWY2NjZmZmQ4OTM5ZTQwMzA0MWYwODciLCJpYXQiOjE2NDM1MzgxOTEsImV4cCI6MTY3NTA5NTc5MX0.iJPlx2bkKRJiBloAhnhNdriIcWEbp4JOEVNbFl9w_gI
 
 {
-    "title": "Joy shree daam",
-    "body": "khela hobei"
+    "title": "Joy shree raam part2",
+    "body": "khela hobei mne hotei hbe"
 }
 
 
 ###
-PATCH http://localhost:5000/users/notes/60955d4dd6887340a0d4c1e8 
+PUT http://localhost:5000/users/notes/61f66762d8939e403041f08e 
 Content-Type: application/json
-Authorization: Bearer "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGE3YTkwNThkZDhmNjZiZTBmYTk3ZGIiLCJpYXQiOjE2MjE2MDA1MzgsImV4cCI6MTY1MzE1ODEzOH0.JYvK0YljUqpx6XF561Ghnc10To80IBAHveUlaDvvQgo"
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWY2NjZmZmQ4OTM5ZTQwMzA0MWYwODciLCJpYXQiOjE2NDM1MzgxOTEsImV4cCI6MTY3NTA5NTc5MX0.iJPlx2bkKRJiBloAhnhNdriIcWEbp4JOEVNbFl9w_gI
 
 {
     "title": "Joy shree ram",
@@ -28,8 +28,8 @@ Authorization: Bearer "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGE3YTkw
 
 ###
 
-DELETE  http://localhost:5000/users/notes/60955d4dd6887340a0d4c1e8 
-Authorization: Bearer "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGE3YTkwNThkZDhmNjZiZTBmYTk3ZGIiLCJpYXQiOjE2MjE2MDA1MzgsImV4cCI6MTY1MzE1ODEzOH0.JYvK0YljUqpx6XF561Ghnc10To80IBAHveUlaDvvQgo"
+DELETE  http://localhost:5000/users/notes/61f66794d8939e403041f094 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWY2NjZmZmQ4OTM5ZTQwMzA0MWYwODciLCJpYXQiOjE2NDM1MzgxOTEsImV4cCI6MTY3NTA5NTc5MX0.iJPlx2bkKRJiBloAhnhNdriIcWEbp4JOEVNbFl9w_gI
 
 
 

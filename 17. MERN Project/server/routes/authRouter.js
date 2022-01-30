@@ -8,14 +8,12 @@ import {
 const router = express.Router();
 
 
+// ADMIN
+router.get("/", getUsers);
+router.delete("/:id", deleteUser)
 
-router.get("/", getUsers );
-
-router.delete("/:id", deleteUser )
-
+// USER
 router.post("/signup", registerUser);
-
-
 router.post("/login", loginUser);
 
 

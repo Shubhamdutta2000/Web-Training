@@ -12,14 +12,8 @@ const authMiddleware = async (req, res, next) => {
       token = req.headers.authorization.split(" ")[1];
       let decodedId;
       console.log(token);
-      await jwt.verify(token, "Secret", (err, decoded) => {
-        if (err) {
-          console.log(err);
-          next(err);
-        }
-        console.log(decoded);
-        decodedId = decoded._id;
-      });
+      let decoded = await jwt.verify(token, "ThisIsSecret");
+      decodedId = decoded._id;
 
       // store Auth (- password) to req.user
       req.user = await user.findById(decodedId).select("-password");
@@ -30,19 +24,34 @@ const authMiddleware = async (req, res, next) => {
         res.status(404);
         res.json({
           error: {
-            message: "Unauthorised",
+            message: error.message,
+          },
+        });
+      } else if (error.name == "TokenExpiredError") {
+        // token expired
+        res.status(404);
+        res.json({
+          error: {
+            message: error.message,
           },
         });
       } else {
-        // token expired
         res.status(404);
-        next(error);
+        res.json({
+          error: {
+            message: error.message,
+          },
+        });
       }
     }
   } else {
     res.status(401);
     const error = new Error("Not Authorized, No token is present");
-    next(error);
+    res.json({
+      error: {
+        message: error.message,
+      },
+    });
   }
 };
 

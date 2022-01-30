@@ -57,10 +57,10 @@ export default function LoginScreen() {
           className={isMobile ? classes.display : classes.image}
         />
       </Grid>
-      <Grid item xs={12} sm={12} md={4} component={Paper} elevation={0}>
+      <Grid item xs={12} sm={12} md={5} component={Paper} elevation={0}>
         <div className={classes.paper}>
           <Typography component="h1" variant="h3">
-            MyNote Taking App
+            Note Taking App
           </Typography>
           <br />
           <Typography component="h1" variant="h5">
@@ -125,7 +125,7 @@ export default function LoginScreen() {
           </form>
         </div>
       </Grid>
-      <Grid item xs={false} sm={false} md={4}>
+      <Grid item xs={false} sm={false} md={3}>
         <img
           src={Login_2}
           className={isMobile ? classes.display : classes.image2}

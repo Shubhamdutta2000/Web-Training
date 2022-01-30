@@ -12,8 +12,22 @@ export const registerUser = async (req, res, next) => {
   if (userExists) {
     res.status(400);
     const err = new Error("User already exists");
-    next(err);
+    res.json({
+      error: {
+        message: error.message,
+      },
+    });
   }
+
+  // Method 1 (for hashing password)
+  // bcrypt.hash(password, 4, function (err, hash) {
+  // // Store hash in your password DB.
+  //   const User = await user.create({
+  //     username,
+  //     email,
+  //     password,
+  //   });
+  // });
 
   const User = await user.create({
     username,
@@ -24,12 +38,15 @@ export const registerUser = async (req, res, next) => {
     res.json({
       _id: User._id,
       name: User.username,
-      password: User.password,
     });
   } else {
     res.status(404);
     const err = new Error("Invalid User Data");
-    next(err);
+    res.json({
+      error: {
+        message: error.message,
+      },
+    });
   }
 };
 
@@ -40,7 +57,24 @@ export const loginUser = async (req, res, next) => {
   const { email, password } = req.body;
   const User = await user.findOne({ email: email });
 
-  if (User) {
+  // Method 1 (for hecking hashed password with plain text password)
+  // if (User) {
+  //   bcrypt.compare(password, User.password, function (err, result) {
+  //     // result == false
+  //     res.json({
+  //       _id: User._id,
+  //       name: User.username,
+  //       email: User.email,
+  //       token: generateToken(User._id),
+  //     });
+  //   });
+  // } else {
+  //   res.status(401);
+  //   const err = new Error("Invalid email or password");
+  //   next(err);
+  // }
+
+  if (User && User.checkPassword(password)) {
     res.json({
       _id: User._id,
       name: User.username,
@@ -50,7 +84,11 @@ export const loginUser = async (req, res, next) => {
   } else {
     res.status(401);
     const err = new Error("Invalid email or password");
-    next(err);
+    res.json({
+      error: {
+        message: error.message,
+      },
+    });
   }
 };
 
@@ -58,20 +96,20 @@ export const loginUser = async (req, res, next) => {
 // @route: user/
 export const getUsers = async (req, res) => {
   try {
-    const notefetch = await user.find();
-    res.status(200).json(notefetch);
+    const users = await user.find();
+    res.status(200).json(users);
   } catch (error) {
     res.status(404).json({ message: error.message });
   }
 };
 
 // @purpose: Delete user
-// @route: user/delete
+// @route: user/delete/:id
 export const deleteUser = async (req, res) => {
   const { id: id } = req.params;
   console.log(req.params);
   if (!Mongoose.Types.ObjectId.isValid(id))
-    res.status(404).send("No post with that is Found");
+    res.status(404).send("Invalid ObjectID");
   try {
     await user.findByIdAndDelete(id);
     res.status(200).json({ message: "user deleted successfully" });
