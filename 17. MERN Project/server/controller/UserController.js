@@ -14,7 +14,7 @@ export const registerUser = async (req, res, next) => {
     const err = new Error("User already exists");
     res.json({
       error: {
-        message: error.message,
+        message: err.message,
       },
     });
   }
@@ -86,7 +86,7 @@ export const loginUser = async (req, res, next) => {
     const err = new Error("Invalid email or password");
     res.json({
       error: {
-        message: error.message,
+        message: err.message,
       },
     });
   }

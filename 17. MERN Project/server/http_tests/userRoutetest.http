@@ -10,9 +10,9 @@ POST http://localhost:5000/users/signup
 Content-Type: application/json
 
 {
-    "username": "hello",
-    "email": "user@gmal.com",
-    "password": "hello :)"
+    "username": "ki r hbe",
+    "email": "s@gmail.com",
+    "password": "sd"
 }
 
 

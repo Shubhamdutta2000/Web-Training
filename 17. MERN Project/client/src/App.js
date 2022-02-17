@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route,Redirect, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Redirect, Switch } from "react-router-dom";
 import { useSelector } from "react-redux";
 
 import { MuiThemeProvider, createMuiTheme } from "@material-ui/core";
@@ -16,14 +16,14 @@ import Bug from "./screen/Bug";
 
 function App() {
   const { userInfo } = useSelector((state) => state.userLogin);
-    const theme = createMuiTheme({
-      typography: {
-        fontFamily: '"Segoe UI "',
-      },
-      palette: {
-        primary: { main: "rgb(38 98 137)" },
-        secondary: { main: "#fffafa" },
-      },
+  const theme = createMuiTheme({
+    typography: {
+      fontFamily: '"Segoe UI "',
+    },
+    palette: {
+      primary: { main: "rgb(38 98 137)" },
+      secondary: { main: "#fffafa" },
+    },
   });
 
   return (
@@ -31,19 +31,18 @@ function App() {
       <Router history={history}>
         <ScrollToTop>
           <Switch>
-          
-          {!userInfo && <Redirect exact from="/" to="/login" />}
+
+            {!userInfo && <Redirect exact from="/" to="/login" />}
             <Route exact path="/Login" component={LoginScreen} />
             <Route exact path="/Signin" component={SigninScreen} />
-           
+
             <>
               <Navbar />
               <Route exact path="/" component={Home} />
               <Route exact path="/new" component={NewNoteScreen} />
-              <Route exact path="/edit/:id" component={EditNoteScreen} />
-              <Route exact path="/Feature"  />
-              <Route exact path="/Bug"  component={Bug} />
-              <Route  path="404" component={Notfound} />
+              <Route exact path="/note/:id" component={EditNoteScreen} />
+              <Route exact path="/Bug" component={Bug} />
+              <Route path="/404" component={Notfound} />
               <Footer />
             </>
           </Switch>

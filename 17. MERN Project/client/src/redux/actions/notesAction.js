@@ -17,7 +17,7 @@ export const getPosts = () => async (dispatch, getState) => {
 
     const config = {
       headers: {
-        Authorization: `${userInfo.token}`,
+        Authorization: `Bearer ${userInfo.token}`,
       },
     };
     const { data } = await axios.get(url, config);

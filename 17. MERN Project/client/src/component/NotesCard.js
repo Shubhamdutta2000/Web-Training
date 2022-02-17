@@ -16,11 +16,11 @@ function NotesCard({ notes, setCurrentId }) {
   useEffect(() => {
     dispatch(getPosts());
   }, [dispatch]);
-// Push or Redirect to edit screen
+  // Push or Redirect to edit screen
   function Editpost() {
-    history.push(`/edit/${notes._id}`);
+    history.push(`/note/${notes._id}`);
   }
-//For Random colour of the cards
+  //For Random colour of the cards
   function randomColor() {
     let hex = Math.floor(Math.random() * 0x01171c);
     let color = "#" + hex.toString(18);
@@ -29,19 +29,19 @@ function NotesCard({ notes, setCurrentId }) {
   const classes = useStyles();
   return (
     <>
-        <Paper
-          onClick={Editpost}
-          className={classes.CardOne}
-          elevation={3}
-          style={{ backgroundColor: randomColor() }}
-        >
-          <Typography variant="h4" component="h1">
-            {notes.title}
-          </Typography>
-          <Typography variant="body1">
-            {notes.body}
-          </Typography>
-        </Paper>
+      <Paper
+        onClick={Editpost}
+        className={classes.CardOne}
+        elevation={3}
+        style={{ backgroundColor: randomColor() }}
+      >
+        <Typography variant="h4" component="h1">
+          {notes.title}
+        </Typography>
+        <Typography variant="body1">
+          {notes.body}
+        </Typography>
+      </Paper>
     </>
   );
 }
