@@ -19,7 +19,7 @@ function Footer() {
         <Grid container spacing={1}>
 
           {/*Column-1 logo column */}
-          <Grid item spacing={1} md={6} lg={3} xs={10}>
+          <Grid item spacing={1} md={6} lg={4} xs={10}>
             <Typography variant="h4" className={classes.title}>
               Note Taking App
             </Typography>
@@ -28,21 +28,24 @@ function Footer() {
           </Grid>
 
           {/*Column-2 Company column */}
-          <Grid item spacing={6} md={6} lg={3} xs={6}>
-            <Link to="/AboutUs" style={{ textDecoration: 'none' }}><Typography className={clsx(classes.list, classes.top)}> About Note Taking App </Typography></ Link>
-            <Link to="/ContactUs" style={{ textDecoration: 'none' }}><Typography className={clsx(classes.list, classes.top)}> Contact Us </Typography></ Link>
+          <Grid item spacing={6} md={6} lg={4} xs={6}>
+            <Link to="/AboutUs" style={{ textDecoration: 'none' }}>
+              <Typography className={clsx(classes.list, classes.top)}>
+                About Note Taking App
+              </Typography>
+            </ Link>
+            <Link to="/ContactUs" style={{ textDecoration: 'none' }}>
+              <Typography className={clsx(classes.list, classes.top)}>
+                Contact Us
+              </Typography>
+            </ Link>
           </Grid>
 
-          {/*Column-2 Company column */}
-          <Grid item spacing={6} md={6} lg={3} xs={4}>
+          {/*Column-3 Company column */}
+          <Grid item spacing={6} md={6} lg={4} xs={4}>
             <Link to="/FeatureRequest" style={{ textDecoration: 'none' }}><Typography className={clsx(classes.list, classes.top)}> Feature Request </Typography></ Link>
             <Link to="/Bug" style={{ textDecoration: 'none' }}><Typography className={clsx(classes.list, classes.top)}> Report a Bug </Typography></ Link>
           </Grid>
-
-          {/*Column-3 Dev column */}
-          <Grid item spacing={6} md={6} lg={3} xs={5}>
-          </Grid>
-
 
         </Grid>
       </div>
