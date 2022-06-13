@@ -98,5 +98,36 @@
 
     6. $ git show [commit]
         - Outputs metadata and content changes of the specified commit
+        
+        
+# Amending the most recent commit message
+
+    -- Method 1 (Change latest commit):
+
+        1. git commit --amend
+            - will open your editor, allowing you to change the commit message of the most recent commit.
+
+        2. git commit --amend -m "New commit message"
+            -  you can set the commit message directly in the command line
+
+        3. git push <remote> <branch> --force
+             # Or
+           git push <remote> <branch> -f
+                - If you've already pushed your commit up to your remote branch, then - after amending your commit locally (as described above) - you'll also need to force push the commit with:
+                - Warning: force-pushing will overwrite the remote branch with the state of your local one.
+                - Warning: be cautious about amending commits that you have already shared with other people. 
+
+    -- Method 2 (Iteractive rebase):
+
+          1. git rebase -i HEAD~n
+            - Iteractive rebase. 
+            - This allows you to edit any message you want to update even if it's not the latest message.
+            - n is the number of commits up to the last commit you want to be able to edit
+            
+    -- Reference:
+        - https://stackoverflow.com/questions/179123/how-to-modify-existing-unpushed-commit-messages
+
+
+
 
 
