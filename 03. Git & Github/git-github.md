@@ -1,11 +1,11 @@
 # Configure tooling
     - Configure user information for all local repositories
 
-    1. $ git config --global user.email "[email address]"
-        - Sets the email you want attached to your commit transactions
+        1. $ git config --global user.email "[email address]"
+            - Sets the email you want attached to your commit transactions
 
-    2. $ git config --global user.name "[name]"
-        - Sets the name you want attached to your commit transactions
+        2. $ git config --global user.name "[name]"
+            - Sets the name you want attached to your commit transactions
 
 
 
@@ -100,6 +100,8 @@
         - Outputs metadata and content changes of the specified commit
         
         
+        
+        
 # Amending the most recent commit message
 
     -- Method 1 (Change latest commit):
@@ -126,8 +128,4 @@
             
     -- Reference:
         - https://stackoverflow.com/questions/179123/how-to-modify-existing-unpushed-commit-messages
-
-
-
-
 
