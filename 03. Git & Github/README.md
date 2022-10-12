@@ -129,3 +129,61 @@
     -- Reference:
         - https://stackoverflow.com/questions/179123/how-to-modify-existing-unpushed-commit-messages
 
+
+# Merging and Rebasing
+
+    -- Merge Option:
+    
+         1. git checkout feature
+         2. git merge main
+            - The simplest method is to use something like the following to merge the main branch into the feature branch:
+            
+![image](https://user-images.githubusercontent.com/62681943/195256723-1ec8bbcf-b9f6-452a-a908-d9b4a7d86bba.png)
+
+
+    --- The Rebase Option
+    
+        1. git checkout feature
+        2. git rebase main
+            - This effectively incorporates all of the recent commits in main and moves the entire feature branch to start 
+              at the end of the main branch. 
+            - Rebasing, however, rewrites the project history by issuing brand-new commits for each commit in the original branch, 
+              as opposed to using a merge commit.
+            - Benefit:
+                1. You get a much cleaner project history. It eliminates the unnecessary merge commits required by git merge
+                2. As you can see in the figure above, rebasing also produces a flawlessly linear project history. 
+                  You can track a feature's tip all the way back to the project's genesis without encountering any forks.
+                  
+![image](https://user-images.githubusercontent.com/62681943/195257581-05291456-8dee-4564-a0e9-df6d34aff16d.png)
+
+
+    --- Interactive Rebasing
+    
+        1. git checkout feature 
+        2. git rebase -i main
+            - With interactive rebasing, you may make changes to commits as they are transferred to the new branch. 
+            - Given that it gives total control over the commit history of the branch, this is even more potent than an automatic rebase. 
+            - Typically, this is used to clean up a messy history before merging a feature branch into main.
+            - This will open a text editor listing all of the commits that are about to be moved:
+                pick 33d5b7a Message for commit #1
+                pick 9480b3d Message for commit #2
+                pick 5c67e61 Message for commit #3
+
+![image](https://user-images.githubusercontent.com/62681943/195258525-60849895-e7df-4fea-bec3-acac51b42ea2.png)
+
+
+    --- The Golden Rule of Rebasing
+    
+        - All of the main commits are moved to the tip of the feature by the rebase. 
+        - That this only occurred in your repository is a concern. 
+        - The original main is still being used by all other developers. 
+        - Rebasing generates brand-new commits, which causes Git to believe that your main branch's history has changed from everyone else's.
+        - The two main branches must be merged back together in order to be brought into sync. 
+        - This results in an additional merge commit and two sets of commits that include the identical modifications.
+        - Therefore, always ask yourself "Is anyone else looking at this branch?" before doing git rebase. If the answer is yes, stop typing and begin considering a non-destructive strategy to make your modifications (e.g., the git revert command). Otherwise, you are free to alter history however you see fit.
+        
+![image](https://user-images.githubusercontent.com/62681943/195259144-6eeca116-00bd-4bdf-9314-e2baa2baf1f5.png)
+
+
+- References for Rebasing
+    - https://www.atlassian.com/git/tutorials/merging-vs-rebasing 
