@@ -2,6 +2,8 @@
 
 <br />
 
+> Full Stack Syllabus
+
 ### Syllabus
 
 - Module 1 : Introduction
